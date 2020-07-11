@@ -206,10 +206,10 @@ colors:
   # Normal colors
   normal:
     black:   '#141414'
-    red:     '#ff868e'
-    green:   '#60b48a'
-    yellow:  '#dfdf78'
-    blue:    '#6bbdf3'
+    red:     '#e3593b'
+    green:   '#3bbf7d'
+    yellow:  '#e0e055'
+    blue:    '#5eade0'
     magenta: '#935FA7'
     cyan:    '#70c1ff'
     white:   '#eaeaea'
@@ -217,10 +217,10 @@ colors:
   # Bright colors
   bright:
     black:   '#b2b2b2'
-    red:     '#ff868e'
-    green:   '#60b48a'
-    yellow:  '#dfdf78'
-    blue:    '#6bbdf3'
+    red:     '#e3593b'
+    green:   '#3bbf7d'
+    yellow:  '#e0e055'
+    blue:    '#5eade0'
     magenta: '#935FA7'
     cyan:    '#70c1ff' 
     white:   '#eaeaea'
@@ -279,7 +279,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: .8
+background_opacity: .9
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

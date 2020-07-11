@@ -216,6 +216,7 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [class="Yad"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -314,13 +315,13 @@ bar {
     colors {
         background #141414cc
         statusline #eaeaea
-        separator  #666666
+        separator  #3d3d3d
 
 #                           border  backgr. text
-        focused_workspace  #141414cc #141414cc #60b48a
+        focused_workspace  #141414cc #141414cc #3bbf7d
         active_workspace   #141414cc #141414cc #FDF6E3
         inactive_workspace #141414cc #141414cc #666666
-        binding_mode       #141414cc #141414cc #60b48a
+        binding_mode       #141414cc #141414cc #e3593b
         urgent_workspace   #ff868e #ff868e #f3f4f5
     }
 }
@@ -335,8 +336,8 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #60b48a #60b48a #eaeaea #FDF6E3
-  client.focused_inactive #2F3D44 #60b48a #eaeaea #454948
+  client.focused          #3bbf7d #3bbf7d #eaeaea #FDF6E3
+  client.focused_inactive #2F3D44 #3bbf7d #eaeaea #454948
   client.unfocused        #141414 #141414 #eaeaea #454948
   client.urgent           #CB4B16 #ff868e #eaeaea #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
