@@ -70,23 +70,29 @@ bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
-## Browsers
+## Applications
 bindsym $mod+z exec firefox
-bindsym $mod+Shift+z exec 'brave'
-
-## File Managers
 bindsym $mod+x exec alacritty -e 'ranger'
 bindsym $mod+Shift+x exec pcmanfm
-
-## Utilities
 bindsym $mod+Shift+l exec alacritty -e 'htop'
-
-## Development
 bindsym $mod+v exec code
 bindsym $mod+Shift+v exec gitkraken
 
 #########################################################################
-## Windoes Control
+## Autostart Applications
+#########################################################################
+
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id nitrogen --restore; sleep 1;
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id compton nm-applet
+exec --no-startup-id xautolock -time 5 -locker i3lock-fancy
+exec --no-startup-id compton -b
+exec_always --no-startup-id ff-theme-util
+exec_always --no-startup-id fix_xcursor
+
+#########################################################################
+## Windows Control
 #########################################################################
 
 focus_follows_mouse no
@@ -118,8 +124,8 @@ bindsym $mod+f fullscreen toggle
 # change container layout (tabbed)
 bindsym $mod+a layout tabbed
 
-# toggle sticky
-#bindsym $mod+Shift+k sticky toggle
+# Toggle Floating
+bindsym $mod+Shift+space floating toggle
 
 # focus the parent container
 bindsym $mod+w focus parent
@@ -144,10 +150,10 @@ bindsym $mod+Ctrl+Left workspace prev
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
 set $ws1 1: 
-set $ws2 2: 
-set $ws3 3: 
-set $ws4 4: 
-set $ws5 5: 
+set $ws2 2: 
+set $ws3 3: 
+set $ws4 4: 
+set $ws5 5: 
 set $ws6 6 
 set $ws7 7
 set $ws8 8
@@ -181,12 +187,6 @@ bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
-
-# Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -277,21 +277,6 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
-
-#########################################################################
-## Autostart Applications
-#########################################################################
-
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1;
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id xautolock -time 5 -locker i3lock-fancy
-exec --no-startup-id nm-applet
-exec --no-startup-id flameshot
-exec --no-startup-id compton -b
-exec_always --no-startup-id ff-theme-util
-exec_always --no-startup-id fix_xcursor
 
 #########################################################################
 ## i3Bar
