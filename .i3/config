@@ -11,14 +11,9 @@
 ## Autostart Applications
 #########################################################################
 
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1;
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id compton
 exec --no-startup-id xautolock -time 5 -locker i3lock-fancy
 exec --no-startup-id compton -b
-exec_always --no-startup-id ff-theme-util
-exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id autotiling
 
 #########################################################################
@@ -78,70 +73,66 @@ for_window [class="Yad"] floating enable
 #########################################################################
 
 # Return
-bindsym $mod+Return 		         exec $term
+bindsym $mod+Return exec $term
 
 #Escape
-bindsym $mod+Shift+Escape	       exec --no-startup-id $hibernate
+bindsym $mod+Shift+Escape exec --no-startup-id $hibernate
 
 # space
-bindsym $mod+space 			            exec --no-startup-id dmenu_run -nb '#141414' -sb '#3bbf7d' -sf '#eaeaea' -fn 'Proxima Nova 8' -p ''
+bindsym $mod+space exec --no-startup-id dmenu_run -c -l 15
 bindsym $mod+Shift+space floating toggle
 
 #q
-bindsym $mod+q			            kill
+bindsym $mod+q kill
 
 # w
 
 # l
-bindsym $mod+l		            exec --no-startup-id $lock
-bindsym $mod+Shift+l		        exec --no-startup-id $suspend
+bindsym $mod+l exec --no-startup-id $lock
+bindsym $mod+Shift+l exec --no-startup-id $suspend
 
 # r
-bindsym $mod+Shift+r		        restart
+bindsym $mod+Shift+r restart
 
 # y
-bindsym $mod+y			            exec --no-startup-id flameshot gui -p ~/Picures/Screenshot
-bindsym $mod+Shift+y		        exec --no-startup-id flameshot full -p ~/Pictures/Screenshot
+bindsym $mod+y exec flameshot full -p ~/Pictures/Screenshots
 
 # u
-bindsym $mod+u                  [urgent=latest] focus
-
+bindsym $mod+u [urgent=latest] focus
 
 # a
-bindsym $mod+a		              layout tabbed
+bindsym $mod+a layout tabbed
 
 # s
 bindsym $mod+s split h;exec notify-send '⬆️ tile horizontally'
 bindsym $mod+Shift+s split v;exec notify-send '➡️ tile vertically'
 
 # d
-bindsym $mod+d                  exec --no-startup-id morc_menu
+bindsym $mod+d exec --no-startup-id morc_menu
 
 # f
-bindsym $mod+f			            fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # z
-bindsym $mod+z			            exec firefox
+bindsym $mod+z exec firefox
 
 # o
-bindsym $mod+o 			            exec --no-startup-id $reboot
-bindsym $mod+Shift+o		        exec --no-startup-id $shutdown
+bindsym $mod+o exec --no-startup-id $reboot
+bindsym $mod+Shift+o  exec --no-startup-id $shutdown
 
 # x 
 bindsym $mod+x exec alacritty -e 'ranger'
 bindsym $mod+Shift+x exec pcmanfm
 
 # c
-bindsym $mod+c			            exec --no-startup-id picom -b
-bindsym $mod+Shift+c		        exec --no-startup-id killall picom
+bindsym $mod+c exec --no-startup-id picom -b
+bindsym $mod+Shift+c exec --no-startup-id killall compton
 
 # v
-bindsym $mod+v			            exec --no-startup-id code
+bindsym $mod+v exec --no-startup-id code
 
 # m
 bindsym $mod+m bar mode toggle
-
-
 
 #########################################################################
 ## Workspaces
@@ -174,12 +165,12 @@ bindsym $mod+9		workspace $ws9
 bindsym $mod+0		workspace $ws10
 
 # move focused container to workspace
-bindsym $mod+Shift+1	move container to workspace $ws1 
-bindsym $mod+Shift+2	move container to workspace $ws2
-bindsym $mod+Shift+3	move container to workspace $ws3
-bindsym $mod+Shift+4	move container to workspace $ws4
-bindsym $mod+Shift+5	move container to workspace $ws5
-bindsym $mod+Shift+6	move container to workspace $ws6
+bindsym $mod+Shift+1	move container to workspace $ws1; workspace $ws1 
+bindsym $mod+Shift+2	move container to workspace $ws2; workspace $ws2 
+bindsym $mod+Shift+3	move container to workspace $ws3; workspace $ws3 
+bindsym $mod+Shift+4	move container to workspace $ws4; workspace $ws4 
+bindsym $mod+Shift+5	move container to workspace $ws5; workspace $ws5 
+bindsym $mod+Shift+6	move container to workspace $ws6; workspace $ws6 
 bindsym $mod+Shift+7	move container to workspace $ws7
 bindsym $mod+Shift+8	move container to workspace $ws8
 bindsym $mod+Shift+9	move container to workspace $ws9
@@ -195,31 +186,27 @@ bindsym $mod+F12	        exec $term -e nmtui
 # #---Arrow Keys---# #
 bindsym $mod+Left		      focus left
 bindsym $mod+Shift+Left   resize shrink width 5 px or 5 ppt
-bindsym $mod+Ctrl+Left		move workspace to output right
+bindsym $mod+Ctrl+Left		move left
 
 bindsym $mod+Down		      focus down
 bindsym $mod+Shift+Down   resize shrink height 5 px or 5 ppt
-bindsym $mod+Ctrl+Down		move workspace to output up
+bindsym $mod+Ctrl+Down		move down
 
 bindsym $mod+Up			      focus up
 bindsym $mod+Shift+Up     resize grow height 5 px or 5 ppt
-bindsym $mod+Ctrl+Up		  move workspace to output down
+bindsym $mod+Ctrl+Up		  move up
 
 bindsym $mod+Right 		    focus right
 bindsym $mod+Shift+Right  resize grow width 5 px or 5 ppt
-bindsym $mod+Ctrl+Right		move workspace to output left
+bindsym $mod+Ctrl+Right		move right
 
 # Pulse Audio controls
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% #increase sound volume
-# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% #decrease sound volume
-# bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
-
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute; exec notify-send '🔊 Volume Up'"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute; exec notify-send '🔉 Volume Down'"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle; exec notify-send '🔈 Toggle Mute' "
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% #decrease sound volume
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 #########################################################################
-## i3 Colors
+## i3 Config
 #########################################################################
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
