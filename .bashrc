@@ -103,8 +103,8 @@ source $OSH/oh-my-bash.sh
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-alias l="lsd -l"
-alias la="lsd -la"
+alias l="ls -lhN --color=auto --group-directories-first"
+alias la="ls -lahN --color=auto --group-directories-first"
 
 alias fm=ranger
 alias mp=mocp
