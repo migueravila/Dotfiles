@@ -13,7 +13,7 @@
 
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id xautolock -time 5 -locker i3lock-fancy
-exec --no-startup-id compton -b
+exec --no-startup-id picom -b
 exec_always --no-startup-id autotiling
 
 #########################################################################
@@ -49,20 +49,15 @@ gaps outer $outer_gaps
 floating_modifier $mod
 
 for_window [title="alsamixer"] floating enable border pixel 1
-for_window [class="calamares"] floating enable border normal
 for_window [title="File Transfer*"] floating enable
-for_window [class="fpakman"] floating enable
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Nitrogen"] floating enable sticky enable border normal
-for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
