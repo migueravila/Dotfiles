@@ -10,6 +10,7 @@
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
 - The **Startpage**: [🚀 MinPage](https://github.com/MiguelRAvila/MinPage)
 - **Neovim** configuration files
+- **Picom** configuration file
 - The config files for the **Alacritty** Terminal
 - Some cool **wallpapers** I use with the rise
 
