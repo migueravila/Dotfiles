@@ -205,27 +205,6 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_S
 #########################################################################
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar -t
-	status_command i3blocks -c ~/.i3/i3blocks.conf
-	position top
-	bindsym button4 nop
-	bindsym button5 nop
-	strip_workspace_numbers yes
-
-    colors {
-        background #141414cc
-        statusline #eaeaea
-        separator  #3d3d3d
-
-#                           border  backgr. text
-        focused_workspace  #141414cc #141414cc #3bbf7d
-        active_workspace   #141414cc #141414cc #FDF6E3
-        inactive_workspace #141414cc #141414cc #666666
-        binding_mode       #141414cc #141414cc #e3593b
-        urgent_workspace   #ff868e #ff868e #f3f4f5
-    }
-}
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
