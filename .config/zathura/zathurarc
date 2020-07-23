@@ -1,0 +1,24 @@
+set selection-clipboard clipboard
+set font "Neep 10"
+set recolor
+set smooth-scroll "true"
+set page-padding 1
+set statusbar-v-padding 2
+set statusbar-h-padding 20 
+
+set statusbar-bg "#141414" 
+set completion-bg "#141414" 
+set inputbar-bg "#141414" 
+set statusbar-fg "#141414" 
+set recolor-lightcolor "#141414"
+set recolor-darkcolor "#aab9cc" 
+set inputbar-fg "#141414"
+set default-bg "#141414"
+set default-fg "#aab9cc" 
+set notification-error-bg "#CC7670"
+set notification-error-fg "#141414"
+set notification-warning-bg #CC7670"
+set notification-warning-fg #141414"
+set completion-highlight-bg "#CC7670" 
+set completion-highlight-fg "#141414" 
+set completion-fg "#141414" 
