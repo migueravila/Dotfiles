@@ -28,6 +28,7 @@ alias tbc="taskbook -c"
 alias tbcl="taskbook --clear"
 
 alias ga='git add .'
+alias gs='git satus'
 alias gc='git commit -m'
 alias gpl='git pull'
 alias gp='git push'
