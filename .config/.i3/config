@@ -12,8 +12,8 @@
 #########################################################################
 
 exec --no-startup-id nitrogen --restore; sleep 1;
-exec --no-startup-id xautolock -time 5 -locker i3lock-fancy
 exec --no-startup-id picom -b
+exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id autotiling
 
 #########################################################################
@@ -23,7 +23,7 @@ exec_always --no-startup-id autotiling
 smart_borders on
 set $inner_gaps 10
 set $outer_gaps -2
-set $term --no-startup-id alacritty
+set $term --no-startup-id st
 set $mod Mod4
 set $alt Mod1
 set $shutdown sudo -A shutdown -h now
@@ -33,12 +33,12 @@ set $lock --no-startup-id i3lock-fancy
 set $suspend sudo systemctl suspend
 set $hibernate sudo -A systemctl hibernate
 
-font xft:Proxima Nova 8.5
+font xft:Proxima Nova 10
 
 #########################################################################
 ## i3Gaps
 #########################################################################
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 gaps inner $inner_gaps
 gaps outer $outer_gaps
 
@@ -74,11 +74,12 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+Escape exec --no-startup-id $hibernate
 
 # space
-bindsym $mod+space exec --no-startup-id dmenu_run -c -l 15
+bindsym $mod+space exec --no-startup-id dmenu_run -c -l 5
 bindsym $mod+Shift+space floating toggle
 
 #q
 bindsym $mod+q kill
+bindsym $mod+Shift+q exec --no-startup-id $shutdown
 
 # w
 
@@ -113,10 +114,9 @@ bindsym $mod+z exec firefox
 
 # o
 bindsym $mod+o exec --no-startup-id $reboot
-bindsym $mod+Shift+o  exec --no-startup-id $shutdown
 
 # x 
-bindsym $mod+x exec alacritty -e 'ranger'
+bindsym $mod+x exec $term -e 'ranger'
 bindsym $mod+Shift+x exec pcmanfm
 
 # c
@@ -133,19 +133,18 @@ bindsym $mod+m bar mode toggle
 ## Workspaces
 #########################################################################
 
-# bindsym $mod+Ctrl+Right workspace next
-# bindsym $mod+Ctrl+Left workspace prev
+bindsym $mod+Tab workspace nextbindsym $mod+Shift+Tab workspace prev
 
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4 "4:"
+set $ws5 "5:"
+set $ws6 "6:"
+set $ws7 "7: "
+set $ws8 "8: "
+set $ws9 "9: "
+set $ws10 "10: "
 
 # switch to workspace
 bindsym $mod+1		workspace $ws1
@@ -204,13 +203,36 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_S
 ## i3 Config
 #########################################################################
 
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
   client.focused          #3bbf7d #3bbf7d #eaeaea #FDF6E3
-  client.focused_inactive #2F3D44 #3bbf7d #eaeaea #454948
+  client.focused_inactive #2F3D44 #5eade0 #eaeaea #454948
   client.unfocused        #141414 #141414 #eaeaea #454948
   client.urgent           #CB4B16 #ff868e #eaeaea #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
   client.background       #141414
+
+
+bar {
+	i3bar_command i3bar -t
+	status_command i3blocks -c ~/.i3/i3blocks.conf
+	position top
+	bindsym button4 nop
+	bindsym button5 nop
+	strip_workspace_numbers yes
+
+    colors {
+        background #14141477
+        statusline #eaeaea
+        separator  #666666
+
+#                           border  backgr. text
+        focused_workspace  #14141477 #14141477 #3bbf7d
+        active_workspace   #14141477 #14141477 #c4c4c4
+        inactive_workspace #14141477 #14141477 #c4c4c4
+        binding_mode       #14141477 #14141477 #3bbf7d
+        urgent_workspace   #ff868e #ff868e #f3f4f5
+    }
+}
+
