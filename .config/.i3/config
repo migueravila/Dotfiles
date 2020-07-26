@@ -13,8 +13,8 @@
 
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id picom -b
-exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id autotiling
+exec_always --no-startup-id fix_cursor
 
 #########################################################################
 ## System Basics
@@ -42,13 +42,13 @@ for_window [class="^.*"] border pixel 2
 gaps inner $inner_gaps
 gaps outer $outer_gaps
 
+hide_edge_borders both
+
 #########################################################################
 ## Floating mode Windows
 #########################################################################
 
 floating_modifier $mod
-
-for_window [title="alsamixer"] floating enable border pixel 1
 for_window [title="File Transfer*"] floating enable
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
@@ -57,11 +57,7 @@ for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [class="Xfburn"] floating enable
-for_window [class="Yad"] floating enable
 
 #########################################################################
 ## Shortcuts
@@ -72,11 +68,11 @@ bindsym $mod+Return exec $term
 
 #Escape
 
-# space
+# space (Quick actions)
 bindsym $mod+space exec --no-startup-id dmenu_run -c -l 5
 bindsym $mod+Shift+space floating toggle
 
-#q
+#q (Quit)
 bindsym $mod+q kill
 bindsym $mod+Shift+q exec --no-startup-id $shutdown
 
@@ -91,32 +87,32 @@ bindsym $mod+Shift+r restart
 
 # y
 bindsym $mod+y exec flameshot full -p ~/Pictures/Screenshots
+bindsym $mod+Shift+y exec flameshot gui -d 500
 
-# u
-bindsym $mod+u [urgent=latest] focus
-
-# a
+# a (Layout)
 bindsym $mod+a layout tabbed
+bindsym $mod+Shift+a [urgent=latest] focus
 
-# s
+# s (Tile)
 bindsym $mod+s split h;exec notify-send '⬆️ tile horizontally'
 bindsym $mod+Shift+s split v;exec notify-send '➡️ tile vertically'
 
-# d
-bindsym $mod+d exec --no-startup-id morc_menu
+# d (Utility)
+bindsym $mod+d exec $term -e 'htop'
 
-# f
-bindsym $mod+f fullscreen toggle
+# g (Toggle gaps)
+bindsym $mod+g gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+g gaps inner all set 10; gaps outer all set -2
 
-# z
+# z (Browsers)
 bindsym $mod+z exec firefox
 bindsym $mod+Shift+z exec brave
 
-# o
+# o (System)
 bindsym $mod+o exec --no-startup-id $reboot
 bindsym $mod+Shift+o exec --no-startup-id $suspend
 
-# x 
+# x (File managers)
 bindsym $mod+x exec $term -e 'ranger'
 bindsym $mod+Shift+x exec pcmanfm
 
@@ -127,8 +123,9 @@ bindsym $mod+Shift+c exec --no-startup-id killall picom
 # v
 bindsym $mod+v exec --no-startup-id code
 
-# m
+# m 
 bindsym $mod+m bar mode toggle
+bindsym $mod+Shift+m fullscreen toggle
 
 #########################################################################
 ## Workspaces
@@ -139,7 +136,7 @@ bindsym $mod+Shift+Tab workspace prev
 
 set $ws1 "1:"
 set $ws2 "2:"
-set $ws3 "3:"
+set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
 set $ws6 "6:"
@@ -187,6 +184,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% #decrease sound volume
 bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
+
+
 #########################################################################
 ## i3 Config
 #########################################################################
@@ -194,8 +193,8 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_S
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #3bbf7d #3bbf7d #eaeaea #FDF6E3
-  client.focused_inactive #2F3D44 #5eade0 #eaeaea #454948
+  client.focused          #3bbf7d #3bbf7d #eaeaea #3bbf7d
+  client.focused_inactive #2F3D44 #5eade0 #eaeaea #5eade0
   client.unfocused        #141414 #141414 #eaeaea #454948
   client.urgent           #CB4B16 #ff868e #eaeaea #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
@@ -204,8 +203,9 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_S
 
 bar {
 	i3bar_command i3bar -t
-	status_command i3blocks -c ~/.i3/i3blocks.conf
+	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	position top
+	height 20
 	bindsym button4 nop
 	bindsym button5 nop
 	strip_workspace_numbers yes
