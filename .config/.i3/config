@@ -26,7 +26,7 @@ set $outer_gaps -2
 set $term --no-startup-id st
 set $mod Mod4
 set $alt Mod1
-set $shutdown sudo -A shutdown -h now
+set $shutdown shutdown -h now
 set $reboot sudo -A reboot
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $lock --no-startup-id i3lock-fancy
@@ -71,7 +71,6 @@ for_window [class="Yad"] floating enable
 bindsym $mod+Return exec $term
 
 #Escape
-bindsym $mod+Shift+Escape exec --no-startup-id $hibernate
 
 # space
 bindsym $mod+space exec --no-startup-id dmenu_run -c -l 5
@@ -82,10 +81,10 @@ bindsym $mod+q kill
 bindsym $mod+Shift+q exec --no-startup-id $shutdown
 
 # w
+bindsym $mod+w exec $term -e 'calcurse'
 
 # l
 bindsym $mod+l exec --no-startup-id $lock
-bindsym $mod+Shift+l exec --no-startup-id $suspend
 
 # r
 bindsym $mod+Shift+r restart
@@ -111,9 +110,11 @@ bindsym $mod+f fullscreen toggle
 
 # z
 bindsym $mod+z exec firefox
+bindsym $mod+Shift+z exec brave
 
 # o
 bindsym $mod+o exec --no-startup-id $reboot
+bindsym $mod+Shift+o exec --no-startup-id $suspend
 
 # x 
 bindsym $mod+x exec $term -e 'ranger'
@@ -121,7 +122,7 @@ bindsym $mod+Shift+x exec pcmanfm
 
 # c
 bindsym $mod+c exec --no-startup-id picom -b
-bindsym $mod+Shift+c exec --no-startup-id killall compton
+bindsym $mod+Shift+c exec --no-startup-id killall picom 
 
 # v
 bindsym $mod+v exec --no-startup-id code
@@ -133,18 +134,15 @@ bindsym $mod+m bar mode toggle
 ## Workspaces
 #########################################################################
 
-bindsym $mod+Tab workspace nextbindsym $mod+Shift+Tab workspace prev
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 set $ws1 "1:"
 set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
-set $ws6 "6:"
-set $ws7 "7: "
-set $ws8 "8: "
-set $ws9 "9: "
-set $ws10 "10: "
+set $ws6 "6:"
 
 # switch to workspace
 bindsym $mod+1		workspace $ws1
@@ -153,10 +151,6 @@ bindsym $mod+3		workspace $ws3
 bindsym $mod+4		workspace $ws4
 bindsym $mod+5		workspace $ws5
 bindsym $mod+6		workspace $ws6
-bindsym $mod+7		workspace $ws7
-bindsym $mod+8		workspace $ws8
-bindsym $mod+9		workspace $ws9
-bindsym $mod+0		workspace $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1	move container to workspace $ws1; workspace $ws1 
@@ -165,16 +159,10 @@ bindsym $mod+Shift+3	move container to workspace $ws3; workspace $ws3
 bindsym $mod+Shift+4	move container to workspace $ws4; workspace $ws4 
 bindsym $mod+Shift+5	move container to workspace $ws5; workspace $ws5 
 bindsym $mod+Shift+6	move container to workspace $ws6; workspace $ws6 
-bindsym $mod+Shift+7	move container to workspace $ws7
-bindsym $mod+Shift+8	move container to workspace $ws8
-bindsym $mod+Shift+9	move container to workspace $ws9
-bindsym $mod+Shift+0	move container to workspace $ws10
 
 
 # #---Function Buttons---# #
 bindsym $mod+F1		        restart
-bindsym $mod+F2		        exec --no-startup-id screenkey -s small --scr 1
-bindsym $mod+F3	          exec --no-startup-id killall screenkey
 bindsym $mod+F12	        exec $term -e nmtui
 
 # #---Arrow Keys---# #
