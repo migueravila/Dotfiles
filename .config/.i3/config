@@ -15,6 +15,7 @@ exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id picom -b
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id fix_cursor
+exec_always ~/.config/polybar/launch.sh
 
 #########################################################################
 ## System Basics
@@ -23,13 +24,14 @@ exec_always --no-startup-id fix_cursor
 smart_borders on
 set $inner_gaps 10
 set $outer_gaps -2
-set $term --no-startup-id st
+set $top_gaps 18
+set $term --no-startup-id alacritty
+set $aterm --no-startup-id st
 set $mod Mod4
 set $alt Mod1
 set $shutdown shutdown -h now
 set $reboot sudo -A reboot
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
-set $lock --no-startup-id i3lock-fancy
 set $suspend sudo systemctl suspend
 set $hibernate sudo -A systemctl hibernate
 
@@ -41,23 +43,27 @@ font xft:Proxima Nova 10
 for_window [class="^.*"] border pixel 2
 gaps inner $inner_gaps
 gaps outer $outer_gaps
+gaps top $top_gaps
 
 hide_edge_borders both
 
 #########################################################################
-## Floating mode Windows
+## Specifications for Windows
 #########################################################################
 
 floating_modifier $mod
 for_window [title="File Transfer*"] floating enable
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
-for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Lxappearance"] floating enable enable border normal
+for_window [class="Nitrogen"] floating enable enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
+
+assign [class="vlc"] $ws5
+assign [class="Zathura"] $ws6
 
 #########################################################################
 ## Shortcuts
@@ -65,12 +71,13 @@ for_window [class="Timeset-gui"] floating enable border normal
 
 # Return
 bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $aterm
 
 #Escape
 
 # space (Quick actions)
 bindsym $mod+space exec --no-startup-id dmenu_run -c -l 5
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space "mark --add _; [con_mark=f] floating disable, border none, mark --add --toggle _; [con_mark=_] floating enable, border pixel 0; mark --add --toggle f;"
 
 #q (Quit)
 bindsym $mod+q kill
@@ -78,14 +85,15 @@ bindsym $mod+Shift+q exec --no-startup-id $shutdown
 
 # w
 bindsym $mod+w exec $term -e 'calcurse'
+bindsym $mod+Shift+w exec $term -e 'ncmpcpp'
 
 # l
-bindsym $mod+l exec --no-startup-id $lock
+bindsym $mod+l exec betterlockscreen -l
 
 # r
 bindsym $mod+Shift+r restart
 
-# y
+# y (Screenshots)
 bindsym $mod+y exec flameshot full -p ~/Pictures/Screenshots
 bindsym $mod+Shift+y exec flameshot gui -d 500
 
@@ -97,12 +105,16 @@ bindsym $mod+Shift+a [urgent=latest] focus
 bindsym $mod+s split h;exec notify-send '⬆️ tile horizontally'
 bindsym $mod+Shift+s split v;exec notify-send '➡️ tile vertically'
 
+# e (gaps)
+bindsym $mod+e gaps outer current plus 5
+bindsym $mod+Shift+e gaps outer current minus 5
+
 # d (Utility)
 bindsym $mod+d exec $term -e 'htop'
 
 # g (Toggle gaps)
-bindsym $mod+g gaps inner all set 0; gaps outer all set 0
-bindsym $mod+Shift+g gaps inner all set 10; gaps outer all set -2
+bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0; border pixel 0
+bindsym $mod+g gaps inner all set 10; gaps outer all set -2; gaps top all set 18;
 
 # z (Browsers)
 bindsym $mod+z exec firefox
@@ -113,7 +125,7 @@ bindsym $mod+o exec --no-startup-id $reboot
 bindsym $mod+Shift+o exec --no-startup-id $suspend
 
 # x (File managers)
-bindsym $mod+x exec $term -e 'ranger'
+bindsym $mod+x exec $aterm -e 'ranger'
 bindsym $mod+Shift+x exec pcmanfm
 
 # c
@@ -122,10 +134,28 @@ bindsym $mod+Shift+c exec --no-startup-id killall picom
 
 # v
 bindsym $mod+v exec --no-startup-id code
+bindsym $mod+Shift+v exec ~/.scripts/demoji
 
 # m 
 bindsym $mod+m bar mode toggle
 bindsym $mod+Shift+m fullscreen toggle
+
+# Arrow Keys 
+bindsym $mod+Left		      focus left
+bindsym $mod+Shift+Left   resize shrink width 5 px or 5 ppt
+bindsym $mod+Ctrl+Left		move left
+
+bindsym $mod+Down		      focus down
+bindsym $mod+Shift+Down   resize shrink height 5 px or 5 ppt
+bindsym $mod+Ctrl+Down		move down
+
+bindsym $mod+Up			      focus up
+bindsym $mod+Shift+Up     resize grow height 5 px or 5 ppt
+bindsym $mod+Ctrl+Up		  move up
+
+bindsym $mod+Right 		    focus right
+bindsym $mod+Shift+Right  resize grow width 5 px or 5 ppt
+bindsym $mod+Ctrl+Right		move right
 
 #########################################################################
 ## Workspaces
@@ -136,7 +166,7 @@ bindsym $mod+Shift+Tab workspace prev
 
 set $ws1 "1:"
 set $ws2 "2:"
-set $ws3 "3:"
+set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
 set $ws6 "6:"
@@ -158,33 +188,15 @@ bindsym $mod+Shift+5	move container to workspace $ws5; workspace $ws5
 bindsym $mod+Shift+6	move container to workspace $ws6; workspace $ws6 
 
 
-# #---Function Buttons---# #
-bindsym $mod+F1		        restart
-bindsym $mod+F12	        exec $term -e nmtui
-
-# #---Arrow Keys---# #
-bindsym $mod+Left		      focus left
-bindsym $mod+Shift+Left   resize shrink width 5 px or 5 ppt
-bindsym $mod+Ctrl+Left		move left
-
-bindsym $mod+Down		      focus down
-bindsym $mod+Shift+Down   resize shrink height 5 px or 5 ppt
-bindsym $mod+Ctrl+Down		move down
-
-bindsym $mod+Up			      focus up
-bindsym $mod+Shift+Up     resize grow height 5 px or 5 ppt
-bindsym $mod+Ctrl+Up		  move up
-
-bindsym $mod+Right 		    focus right
-bindsym $mod+Shift+Right  resize grow width 5 px or 5 ppt
-bindsym $mod+Ctrl+Right		move right
-
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% #decrease sound volume
 bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
-
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioPause exec mpc stop
+bindsym XF86AudioNext exec mpc stop
+bindsym XF86AudioPrevius exec mpc stop
 
 #########################################################################
 ## i3 Config
@@ -199,28 +211,3 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_S
   client.urgent           #CB4B16 #ff868e #eaeaea #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
   client.background       #141414
-
-
-bar {
-	i3bar_command i3bar -t
-	status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	position top
-	height 20
-	bindsym button4 nop
-	bindsym button5 nop
-	strip_workspace_numbers yes
-
-    colors {
-        background #14141477
-        statusline #eaeaea
-        separator  #666666
-
-#                           border  backgr. text
-        focused_workspace  #14141477 #14141477 #3bbf7d
-        active_workspace   #14141477 #14141477 #c4c4c4
-        inactive_workspace #14141477 #14141477 #c4c4c4
-        binding_mode       #14141477 #14141477 #3bbf7d
-        urgent_workspace   #ff868e #ff868e #f3f4f5
-    }
-}
-
