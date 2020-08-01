@@ -12,7 +12,7 @@
 - **Neovim** configuration files
 - **Picom** configuration file
 - The config files for the **Alacritty** Terminal
-- Some cool **wallpapers** I use with the rise
+- Some cool **wallpapers** I use with the rice
 
 ![](https://github.com/MiguelRAvila/RelaxedDotfiles/blob/master/rsc/preview.png)
 
