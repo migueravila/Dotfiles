@@ -1,0 +1,415 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/rod/
+	..
+1596233767
+'b
+	/home/rod/bin/
+	..
+1596233767
+'h
+	/home/rod/
+	..
+1596233767
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/rod/.cargo
+	..
+0
+d/home/rod
+	.wallpapers
+23
+d/home/rod/.wallpapers
+	..
+0
+d/home/rod
+	Pictures
+28
+d/home
+	rod
+1
+d/
+	home
+4
+d/home
+	rod
+1
+d/home/rod
+	..
+0
+d/home
+	rod
+1
+d/
+	home
+4
+d/home
+	rod
+1
+d/
+	home
+4
+d/home
+	rod
+1
+d/home/rod
+	.wallpapers
+23
+d/home/rod/.wallpapers
+	wp2.jpg
+35
+d/home/rod
+	Downloads
+26
+d/home/rod/Downloads
+	presentacionbackend.mkv
+24
+d/home/rod
+	Downloads
+26
+d/home/rod/Downloads
+	open-doodles.zip
+23
+d/home/rod
+	.vscode
+22
+d/home/rod/.vscode
+	..
+0
+d/home/rod
+	Pictures
+4
+d/home/rod/Pictures
+	Screenshots
+4
+d/home/rod
+	Pictures
+4
+d/home/rod/Pictures
+	Screenshots
+4
+d/home/rod
+	Downloads
+26
+d/home/rod/Downloads
+	Boston-icons-0.8.tar.xz
+6
+d/home/rod
+	Downloads
+26
+d/home/rod/Downloads
+	..
+0
+d/home/rod
+	.wallpapers
+23
+d/home/rod/.wallpapers
+	wallhaven-423rvg.jpg
+15
+d/home/rod
+	.wallpapers
+23
+d/home/rod/.wallpapers
+	wallhaven-8xpvv2.jpg
+10
+d/home/rod
+	.wallpapers
+23
+d/home/rod/.wallpapers
+	wallhaven-8xpvv2.jpg
+10
+d/home/rod
+	.wallpapers
+23
+d/home
+	rod
+1
+d/
+	home
+4
+d/home
+	rod
+1
+d/home/rod
+	.wallpapers
+21
+d/home/rod/.wallpapers
+	jeremy-fenske-link-foresttemple.jpg
+6
+d/home/rod
+	.wallpapers
+21
+d/home/rod/.wallpapers
+	wallhaven-013x3g.jpg
+7
+d/home/rod
+	.wallpapers
+21
+d/home
+	rod
+1
+d/home/rod
+	Public
+8
+d/home/rod/Public
+	Personal
+3
+d/home/rod/Public/Personal
+	..
+0
+d/home/rod/Public
+	Personal
+3
+d/home/rod/Public/Personal
+	..
+0
+d/home/rod/Public
+	Personal
+3
+d/home/rod/Public/Personal
+	..
+0
+d/home/rod/Public
+	Rust
+5
+d/home/rod/Public/Rust
+	Taskgo
+2
+d/home/rod/Public/Rust/Taskgo
+	target
+3
+d/home/rod/Public/Rust/Taskgo/target
+	debug
+1
+d/home/rod/Public/Rust/Taskgo/target/debug
+	Taskgo
+7
+d/home/rod/Public/Rust/Taskgo/target
+	debug
+1
+d/home/rod/Public/Rust/Taskgo
+	target
+3
+d/home/rod/Public/Rust
+	Taskgo
+2
+d/home/rod/Public
+	Rust
+5
+d/home/rod
+	Public
+8
+d/home
+	rod
+1
+d/
+	bin
+0
+d/bin
+	ftpd
+31
+d/
+	bin
+0
+d/bin
+	2to3
+4
+d/
+	bin
+0
+d/bin
+	2to3
+4
+d/
+	home
+4
+d/home
+	rod
+1
+d/home/rod
+	.cache
+1
+d/home/rod/.cache
+	..
+0
+d/home/rod
+	Downloads
+7
+d/home/rod/Downloads
+	El Mundo de Craig - T.02 E.02 - Jacob del Arroyo.mkv
+7
+d/home/rod
+	Downloads
+7
+d/home
+	rod
+1
+d/home/rod
+	.zhistory
+31
+d/home
+	rod
+1
+d/
+	bin
+0
+d/bin
+	..
+0
+d/
+	bin
+0
+d/bin
+	acpi
+4
+d/
+	home
+4
+d/home
+	rod
+1
+d/home/rod
+	Pictures
+27
+d/home/rod/Pictures
+	wallpapers
+6
+d/home/rod/Pictures/wallpapers
+	0271.jpg
+30
+d/home/rod/Pictures
+	wallpapers
+6
+d/home/rod/Pictures/wallpapers
+	0271.jpg
+30
+d/home/rod/Pictures
+	wallpapers
+6
+d/home/rod/Pictures/wallpapers
+	0271.jpg
+30
+d/home/rod/Pictures
+	wallpapers
+6
+d/home/rod
+	.wallpapers
+20
+d/home/rod/.wallpapers
+	..
+0
+d/home/rod
+	.wallpapers
+20
+d/home/rod/.wallpapers
+	..
+0
+d/home/rod
+	.wallpapers
+20
+d/home/rod/.wallpapers
+	..
+0
+d/home/rod
+	.wallpapers
+20
+d
+
+# Right window history (oldest to newest):
+D/home/rod
+	..
+0
+D/home
+	rod
+1
+D/
+	lib
+5
+D/lib
+	..
+0
+D/
+	home
+4
+D/home
+	rod
+1
+D/home/rod
+	Downloads
+3
+D/home
+	rod
+1
+D/home/rod
+	..
+0
+D/home
+	rod
+1
+D/home/rod
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:[
+:Q
+:set dotfiles
+:split
+:cw Wallpaper
+:splitv
+:hidden
+:help
+:q
+:only
+:vsplit
+
+# Search history (oldest to newest):
+/vif
+/config
+/.config
+/ff
+/ffe
+/dijo
+
+# Prompt history (oldest to newest):
+pWallpaper 1
+pWallpaper2
+pWallpaper 4
+pWallpaper 2
+pWallpaper 3
+pGhibli Wallpapers
+pUndertale Wallpapers
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/rod/Desktop
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].0
+]F
+s0

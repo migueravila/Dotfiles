@@ -18,5 +18,3 @@
 - The **Startpage**: [🚀 MinPage](https://github.com/MiguelRAvila/MinPage)
 
 ![](https://github.com/MiguelRAvila/RelaxedDotfiles/blob/master/rsc/preview.png)
-
-
