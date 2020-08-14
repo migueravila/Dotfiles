@@ -5,6 +5,7 @@
 ### In this repo you can find:
 
 - Config files for **i3** and **i3blocks**
+- **Polybar** config file
 - **Ncmpcpp** player config files
 - **Neovim** configuration files
 - **Picom** configuration file
@@ -15,6 +16,6 @@
 
 - The **Dmenu** configuration file: [⚡ZenDmenu](https://github.com/MiguelRAvila/ZenDmenu)
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
-- The **Startpage**: [🚀 MinPage](https://github.com/MiguelRAvila/MinPage)
+- The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 
 ![](https://github.com/MiguelRAvila/RelaxedDotfiles/blob/master/rsc/preview.png)
