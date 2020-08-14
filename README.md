@@ -1,6 +1,6 @@
-# RelaxedDotfiles
+# Nordfiles
 
-> ### 🍃 My personal Relaxed-Dotfiles for i3-gaps 
+> ### 🍃 My personal Nord-Dotfiles for i3-gaps using Nord Color Scheme
 
 ### In this repo you can find:
 
