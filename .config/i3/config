@@ -21,7 +21,7 @@ exec_always ~/.config/polybar/launch.sh
 smart_borders on
 set $inner_gaps 10
 set $outer_gaps -2
-set $top_gaps 16
+set $top_gaps 25
 set $term --no-startup-id st
 set $sterm --no-startup-id alacritty
 set $mod Mod4
@@ -64,7 +64,7 @@ bindsym $mod+Shift+Return exec $sterm
 #Escape
 
 # space (Quick actions)
-bindsym $mod+space exec --no-startup-id dmenu_run 
+bindsym $mod+space exec --no-startup-id dmenu_run -p '' 
 bindsym $mod+Shift+space "mark --add _; [con_mark=f] floating disable, border none, mark --add --toggle _; [con_mark=_] floating enable, border pixel 0; mark --add --toggle f;"
 bindsym $mod+Ctrl+space exec =
 
@@ -96,9 +96,13 @@ bindsym $mod+Shift+s split v;exec notify-send '➡️ tile vertically'
 bindsym $mod+e gaps outer current plus 5; 
 bindsym $mod+Shift+e gaps outer current minus 5
 
-# d (Utility)
+# d (dir)
 bindsym $mod+d exec bmkm
-bindsym $mod+Shift+d exec bmkf
+
+
+# f (files)
+bindsym $mod+f exec bmkf
+bindsym $mod+Shift+f exec demoji
 
 # g (Toggle gaps)
 bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0; border pixel 0
@@ -122,6 +126,10 @@ bindsym $mod+Shift+v exec $sterm -e 'ytop'
 
 # m 
 bindsym $mod+m fullscreen toggle
+bindsym $mod+Shift+m exec dmenu_run -c -l 10
+
+# b (Polybar autohide)
+bindsym $mod+b exec polybar-msg cmd toggle
 
 # Arrow Keys 
 bindsym $mod+Left		      focus left
@@ -147,9 +155,9 @@ bindsym $mod+Ctrl+Right		move right
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
-set $ws1 "1:"
+set $ws1 "1:"
 set $ws2 "2:"
-set $ws3 "3:"
+set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
 set $ws6 "6:"
@@ -172,9 +180,9 @@ bindsym $mod+Shift+6	move container to workspace $ws6; workspace $ws6
 
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% #decrease sound volume
-bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%; exec notify-send '🔊 Volume up'
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%; exec notify-send '🔉 Volume Down'
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle; exec notify-send '🔃Toggle Mute'
 
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioPause exec mpc stop
@@ -184,7 +192,6 @@ bindsym XF86AudioPrevius exec mpc stop
 #########################################################################
 ## i3 Config
 #########################################################################
-
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
