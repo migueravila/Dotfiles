@@ -1,6 +1,6 @@
 [global]
     frame_width = 0
-    frame_color = "#2e3440"
+    frame_color = "#1F2229"
     
     font = Proxima Nova 10
     
@@ -127,7 +127,7 @@
     padding = 15
     
     # Horizontal padding.
-    horizontal_padding = 15
+    horizontal_padding = 20
     
     # Define a color for the separator.
     # possible values are:
@@ -155,7 +155,7 @@
     icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
 
     # Limit icons size.
-    max_icon_size=128
+    max_icon_size=50
 
 [shortcuts]
 
@@ -182,16 +182,16 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#5e81ac"
-    foreground = "#556064"
+    background = "#1F2229"
+    foreground = "#D8DEE9"
     timeout = 10
 
 [urgency_normal]
-    background = "#4c566a"
-    foreground = "#F9FAF9"
+    background = "#1F2229"
+    foreground = "#D8DEE9"
     timeout = 10
 
 [urgency_critical]
-    background = "#bf616a"
-    foreground = "#F9FAF9"
+    background = "#1F2229"
+    foreground = "#D8DEE9"
     timeout = 0
