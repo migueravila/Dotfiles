@@ -4,10 +4,9 @@
 #   / /\ \ | '__| __| |/ __| |  | |/ _ \| __|  _| | |/ _ \/ __|
 #  / ____ \| |  | |_| | (__| |__| | (_) | |_| | | | |  __/\__ \
 # /_/    \_\_|   \__|_|\___|_____/ \___/ \__|_| |_|_|\___||___/   
-#
                                                           
 export ZSH="/home/rod/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="hyperzsh"
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -34,7 +33,6 @@ alias mp=ncmpcpp
 alias ht=htop
 alias vi=nvim
 
-alias wttr='curl -Ss "https://wttr.in?0&T&Q"'
 alias wt='curl wttr.in'
 alias tar='tar -xf'
 
@@ -45,9 +43,3 @@ alias gc='git commit -m'
 alias gp='git push'
 alias gpl='git pull'
 alias gcl='git clone'
-
-#Scripts
-mcolors
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
