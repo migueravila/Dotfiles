@@ -1,0 +1,62 @@
+#! /bin/sh
+
+# FlowerFetch, based on mfetch by depsterr: https://github.com/depsterr/mfetch
+
+# Get user 
+user="${USER-$(id -u -n)}"
+
+# Get host 
+host="$(uname -n)"
+
+# Get OS
+. /etc/os-release # load lib
+os="$PRETTY_NAME"
+
+# Packages (Pacman)
+pkg="$(pacman -Qq | wc -l)"
+
+# Shell
+shell="${SHELL##*/}"
+
+# Here you can write your wm or de
+wm="i3"
+
+#####################
+# Colors and palette 
+#####################
+
+# Colors and palette method stolen from dylanaraps pftech: https://github.com/dylanaraps/pfetch
+c0='[0m'
+c1='[31m'; c2='[32m'
+c3='[33m'; c4='[34m'
+c5='[35m'; c6='[36m'
+c7='[37m'; c8='[38m'
+
+palette="[7m$c1 $c1 $c2 $c2 $c3 $c3 $c4 $c4 $c5 $c5 $c6 $c6 [m"
+
+# Art based on https://asciiart.website/index.php?art=plants/flowers
+	 
+ARTR1="${c6} _,.-'``'-.,_,.='``"
+ARTR2="${c6}                   "
+ARTR3="${c4} .='``'-.,_,.-'``'-"
+ARTR4="${c4} 		       "
+ARTR5="${c4} _,.-'``'-.,_,.='``"
+
+# Print
+cat <<-EOF
+
+     ${ARTR1}
+     ${ARTR2}
+     ${ARTR3}
+     ${ARTR4}
+     ${ARTR5}
+
+      ${c4}${user}${c0} in ${c6}${host}
+      ${c4}os${c0}     ${os}
+      ${c4}pkg${c0}    ${pkg}
+      ${c4}shell${c0}  ${shell}
+      ${c4}wm${c0}     ${wm}
+   
+        ${palette}
+
+EOF
