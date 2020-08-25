@@ -16,7 +16,7 @@
 
 ### Other projects I use with my dotfiles:
 
-- The build of **Dmenu**: [⚡Dmenu](https://github.com/MiguelRAvila/Dmenu)
+- The build of **Dmenu**: [⚡CleanDmenu](https://github.com/MiguelRAvila/CleanDmenu)
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build of **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
