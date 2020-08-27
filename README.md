@@ -1,4 +1,4 @@
-# Nordfiles
+# Dotfiles
 
 > ### 🏠 The home of my config files
 
