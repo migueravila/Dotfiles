@@ -1,6 +1,6 @@
 # Nordfiles
 
-> ### 🏔️ My personal dotfiles (using the Nord Color Scheme) Grab what you want!
+> ### 🏠 The home of my config files
 
 ![](https://github.com/MiguelRAvila/RelaxedDotfiles/blob/master/rsc/preview1.png)
 
