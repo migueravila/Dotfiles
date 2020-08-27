@@ -1,10 +1,10 @@
-# _   _               _  __ _ _           
-#| \ | |             | |/ _(_) |          
-#|  \| | ___  _ __ __| | |_ _| | ___  ___ 
-#| . ` |/ _ \| '__/ _` |  _| | |/ _ \/ __|
-#| |\  | (_) | | | (_| | | | | |  __/\__ \
-#\_| \_/\___/|_|  \__,_|_| |_|_|\___||___/
-                                                          
+#  ____        _    __ _ _           
+# |  _ \  ___ | |_ / _(_) | ___  ___ 
+# | | | |/ _ \| __| |_| | |/ _ \/ __|
+# | |_| | (_) | |_|  _| | |  __/\__ \
+# |____/ \___/ \__|_| |_|_|\___||___/
+#                                   
+                            
 export ZSH="/home/rod/.oh-my-zsh"
 ZSH_THEME="hyperzsh"
 
@@ -35,8 +35,11 @@ alias vi=nvim
 
 alias wt='curl wttr.in'
 alias tar='tar -xf'
+alias yta='youtube-dl -x -f bestaudio/best'
+alias node='node'
 
 alias p='ffetch'
+alias pp='colorscript random'
 
 alias ga='git add .'
 alias gc='git commit -m'

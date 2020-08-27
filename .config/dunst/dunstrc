@@ -1,6 +1,6 @@
 [global]
     frame_width = 0
-    frame_color = "#1F2229"
+    frame_color = "#0F0F0F"
     
     font = Proxima Nova 10
     
@@ -182,16 +182,16 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#1F2229"
+    background = "#0F0F0F"
     foreground = "#D8DEE9"
     timeout = 10
 
 [urgency_normal]
-    background = "#1F2229"
+    background = "#0F0F0F"
     foreground = "#D8DEE9"
     timeout = 10
 
 [urgency_critical]
-    background = "#1F2229"
+    background = "#0F0F0F"
     foreground = "#D8DEE9"
     timeout = 0

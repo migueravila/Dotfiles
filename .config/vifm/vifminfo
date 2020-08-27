@@ -26,192 +26,57 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/rod/.cargo
-	..
-0
-d/home/rod
-	.wallpapers
-23
 d/home/rod/.wallpapers
 	..
 0
 d/home/rod
-	Pictures
-28
-d/home
-	rod
-1
-d/
-	home
-4
-d/home
-	rod
-1
-d/home/rod
-	..
-0
-d/home
-	rod
-1
-d/
-	home
-4
-d/home
-	rod
-1
-d/
-	home
-4
-d/home
-	rod
-1
-d/home/rod
 	.wallpapers
-23
+20
 d/home/rod/.wallpapers
-	wp2.jpg
-35
-d/home/rod
-	Downloads
-26
-d/home/rod/Downloads
-	presentacionbackend.mkv
-24
-d/home/rod
-	Downloads
-26
-d/home/rod/Downloads
-	open-doodles.zip
-23
-d/home/rod
-	.vscode
-22
-d/home/rod/.vscode
-	..
-0
-d/home/rod
-	Pictures
-4
-d/home/rod/Pictures
-	Screenshots
-4
-d/home/rod
-	Pictures
-4
-d/home/rod/Pictures
-	Screenshots
-4
-d/home/rod
-	Downloads
-26
-d/home/rod/Downloads
-	Boston-icons-0.8.tar.xz
-6
-d/home/rod
-	Downloads
-26
-d/home/rod/Downloads
 	..
 0
 d/home/rod
 	.wallpapers
-23
+20
 d/home/rod/.wallpapers
-	wallhaven-423rvg.jpg
-15
+	..
+0
 d/home/rod
-	.wallpapers
-23
-d/home/rod/.wallpapers
-	wallhaven-8xpvv2.jpg
-10
-d/home/rod
-	.wallpapers
-23
-d/home/rod/.wallpapers
-	wallhaven-8xpvv2.jpg
-10
-d/home/rod
-	.wallpapers
-23
-d/home
-	rod
-1
-d/
-	home
-4
-d/home
-	rod
-1
-d/home/rod
-	.wallpapers
-21
-d/home/rod/.wallpapers
-	jeremy-fenske-link-foresttemple.jpg
-6
-d/home/rod
-	.wallpapers
-21
-d/home/rod/.wallpapers
-	wallhaven-013x3g.jpg
-7
-d/home/rod
-	.wallpapers
-21
-d/home
-	rod
-1
-d/home/rod
-	Public
-8
-d/home/rod/Public
-	Personal
+	.config
 3
-d/home/rod/Public/Personal
+d/home/rod/.config
+	bashtop
+9
+d/home/rod/.config/bashtop
+	themes
+1
+d/home/rod/.config/bashtop/themes
 	..
 0
-d/home/rod/Public
-	Personal
-3
-d/home/rod/Public/Personal
-	..
-0
-d/home/rod/Public
-	Personal
-3
-d/home/rod/Public/Personal
-	..
-0
-d/home/rod/Public
-	Rust
-5
-d/home/rod/Public/Rust
-	Taskgo
+d/home/rod/.config/bashtop
+	user_themes
 2
-d/home/rod/Public/Rust/Taskgo
-	target
-3
-d/home/rod/Public/Rust/Taskgo/target
-	debug
+d/home/rod/.config/bashtop/user_themes
+	..
+0
+d/home/rod/.config/bashtop
+	themes
 1
-d/home/rod/Public/Rust/Taskgo/target/debug
-	Taskgo
-7
-d/home/rod/Public/Rust/Taskgo/target
-	debug
-1
-d/home/rod/Public/Rust/Taskgo
-	target
-3
-d/home/rod/Public/Rust
-	Taskgo
-2
-d/home/rod/Public
-	Rust
-5
+d/home/rod/.config/bashtop/themes
+	monokai.theme
+6
+d/home/rod/.config
+	..
+0
 d/home/rod
-	Public
-8
+	.config
+3
+d/home/rod/.config
+	BetterDiscord
+1
+d/home/rod
+	.cargo
+2
 d/home
 	rod
 1
@@ -219,20 +84,104 @@ d/
 	bin
 0
 d/bin
-	ftpd
-31
+	..
+0
+d/
+	opt
+9
+d/opt
+	discord
+1
+d/opt/discord
+	locales
+1
+d/opt
+	shell-color-scripts
+2
+d/opt/shell-color-scripts
+	..
+0
+d/opt
+	shell-color-scripts
+2
+d/
+	root
+11
+d/root
+	.config
+2
+d/root/.config
+	..
+0
+d/root
+	.config
+2
+d/
+	root
+11
+d/root
+	.config
+2
+d/root/.config
+	Kvantum
+1
+d/root
+	.i3
+5
+d/root/.i3
+	..
+0
+d/root
+	.icons
+6
+d/root/.icons
+	..
+0
+d/root
+	.profile
+19
+d/
+	root
+11
+d/root
+	.profile
+19
 d/
 	bin
 0
 d/bin
-	2to3
-4
-d/
-	bin
+	..
 0
-d/bin
-	2to3
-4
+d/
+	opt
+9
+d/opt
+	..
+0
+d/
+	opt
+9
+d/opt
+	discord
+1
+d/opt/discord
+	resources
+2
+d/opt/discord/resources
+	app
+1
+d/opt/discord/resources/app
+	..
+0
+d/opt/discord/resources
+	..
+0
+d/opt/discord
+	resources
+2
+d/opt
+	discord
+1
 d/
 	home
 4
@@ -240,92 +189,143 @@ d/home
 	rod
 1
 d/home/rod
-	.cache
+	.wallpapers
+20
+d/home/rod/.wallpapers
+	wallhaven-d57k83.jpg
+11
+d/home/rod
+	..
+0
+d/home
+	rod
 1
-d/home/rod/.cache
+d/home/rod
+	Downloads
+9
+d/home/rod/Downloads
+	CatalogoIESmovilidadvirtual2020jul10protegida.xlsx
+12
+d/home/rod
+	..
+0
+d/home
+	rod
+1
+d/home/rod
+	Downloads
+23
+d/home/rod/Downloads
+	CatalogoIESmovilidadvirtual2020jul10protegida.xlsx
+12
+d/home/rod
+	.wallpapers
+7
+d/home/rod/.wallpapers
+	Calm.jpg
+11
+d/home/rod
+	Downloads
+23
+d/home/rod/Downloads
+	Invictus.pdf
+6
+d/home/rod
+	.wallpapers
+20
+d/home/rod/.wallpapers
+	atey-ghailan-garden-words-final.jpg
+11
+d/home/rod
+	.wallpapers
+11
+d/home/rod/.wallpapers
+	atey-ghailan-garden-words-final.jpg
+11
+d/home/rod
+	.thumbnails
+9
+d/home/rod/.thumbnails
+	..
+0
+d/home/rod
+	.wallpapers
+20
+d/home/rod/.wallpapers
+	atey-ghailan-219.jpg
+12
+d/home/rod
+	..
+0
+d/home
+	rod
+1
+d/
+	home
+4
+d/home
+	rod
+1
+d/home/rod
+	.wallpapers
+4
+d/home/rod/.wallpapers
+	236_365_sit_by_snatti89_d9vo9ej.png
+5
+d/home/rod
+	Documents
+6
+d/home/rod/Documents
 	..
 0
 d/home/rod
 	Downloads
 7
 d/home/rod/Downloads
-	El Mundo de Craig - T.02 E.02 - Jacob del Arroyo.mkv
-7
+	Invictus.pdf
+6
+d/home/rod/.themes/NoName
+	..
+0
+d/home/rod/.themes
+	NoName
+4
+d/home/rod
+	.themes
+4
+d/home
+	rod
+1
+d/home/rod
+	Downloads
+5
+d/home/rod/Downloads
+	CatalogoIESmovilidadvirtual2020jul10protegida.xlsx
+9
+d/home/rod
+	Downloads
+5
+d/home
+	rod
+1
+d/home/rod
+	.wallpapers
+4
+d/home/rod/.wallpapers
+	186_365_path_of_miranda_last_of_its_kind_by_snatti89_d9pmhye.png
+4
+d/home/rod
+	.themes
+4
+d/home
+	rod
+1
 d/home/rod
 	Downloads
 7
-d/home
-	rod
-1
-d/home/rod
-	.zhistory
-31
-d/home
-	rod
-1
-d/
-	bin
-0
-d/bin
-	..
-0
-d/
-	bin
-0
-d/bin
-	acpi
-4
-d/
-	home
-4
-d/home
-	rod
-1
-d/home/rod
-	Pictures
-27
-d/home/rod/Pictures
-	wallpapers
-6
-d/home/rod/Pictures/wallpapers
-	0271.jpg
-30
-d/home/rod/Pictures
-	wallpapers
-6
-d/home/rod/Pictures/wallpapers
-	0271.jpg
-30
-d/home/rod/Pictures
-	wallpapers
-6
-d/home/rod/Pictures/wallpapers
-	0271.jpg
-30
-d/home/rod/Pictures
-	wallpapers
-6
-d/home/rod
-	.wallpapers
-20
-d/home/rod/.wallpapers
-	..
-0
-d/home/rod
-	.wallpapers
-20
-d/home/rod/.wallpapers
-	..
-0
-d/home/rod
-	.wallpapers
-20
-d/home/rod/.wallpapers
-	..
-0
-d/home/rod
-	.wallpapers
-20
+d/home/rod/Downloads
+	Invictus.pdf
+14
 d
 
 # Right window history (oldest to newest):
@@ -360,8 +360,23 @@ D/home
 	rod
 1
 D/home/rod
-	..
-0
+	.wallpapers
+4
+D/home/rod/.wallpapers
+	Warm.jpg
+8
+D/home/rod
+	.wallpapers
+4
+D/home/rod/.wallpapers
+	Warm.jpg
+8
+D/home/rod
+	.wallpapers
+4
+D/home/rod/.wallpapers
+	Warm.jpg
+8
 D
 
 # Command line history (oldest to newest):
@@ -373,9 +388,11 @@ D
 :splitv
 :hidden
 :help
-:q
 :only
 :vsplit
+:cw 
+:delete
+:q
 
 # Search history (oldest to newest):
 /vif
@@ -384,6 +401,9 @@ D
 /ff
 /ffe
 /dijo
+/bash
+/electron
+/inv
 
 # Prompt history (oldest to newest):
 pWallpaper 1
@@ -397,11 +417,372 @@ pUndertale Wallpapers
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/rod/Desktop
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-xlrm5z.png
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-yj7j6k.jpg
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-yjm927.jpg
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-yjpmyk.jpg
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-ymwj9d.jpg
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-zm5pxv.jpg
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-zm9dky.png
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-zmd22w.png
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-zmjklg.jpg
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-zmwv9y.png
+""/home/rod/.local/share/vifm/Trash/000_wallhaven-zxr38v.png
+""/home/rod/.local/share/vifm/Trash/000_wp1.jpg
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/home/rod/.local/share/vifm/Trash/000_1b58ef6e3d36a42e01992accf5c52d6eea244353.jpg
+	/home/rod/.wallpapers/1b58ef6e3d36a42e01992accf5c52d6eea244353.jpg
+t/home/rod/.local/share/vifm/Trash/000_6aa40451ced9a7bd192c7ee690dd6c58b7173bcd.jpg
+	/home/rod/.wallpapers/6aa40451ced9a7bd192c7ee690dd6c58b7173bcd.jpg
+t/home/rod/.local/share/vifm/Trash/000_8svi0mccn7i51.jpg
+	/home/rod/.wallpapers/8svi0mccn7i51.jpg
+t/home/rod/.local/share/vifm/Trash/000_182e425e416ffb7bc58a6d0dab890ec2abb5926f.jpg
+	/home/rod/.wallpapers/182e425e416ffb7bc58a6d0dab890ec2abb5926f.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand.jpg
+	/home/rod/.wallpapers/BlueSand.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand2.jpg
+	/home/rod/.wallpapers/BlueSand2.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand3.jpg
+	/home/rod/.wallpapers/BlueSand3.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand4.jpg
+	/home/rod/.wallpapers/BlueSand4.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand5.jpg
+	/home/rod/.wallpapers/BlueSand5.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand6.jpg
+	/home/rod/.wallpapers/BlueSand6.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand7.jpg
+	/home/rod/.wallpapers/BlueSand7.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand8.jpg
+	/home/rod/.wallpapers/BlueSand8.jpg
+t/home/rod/.local/share/vifm/Trash/000_BlueSand9.jpg
+	/home/rod/.wallpapers/BlueSand9.jpg
+t/home/rod/.local/share/vifm/Trash/000_Calm.jpg
+	/home/rod/.wallpapers/Calm.jpg
+t/home/rod/.local/share/vifm/Trash/000_Cold1.jpg
+	/home/rod/.wallpapers/Cold1.jpg
+t/home/rod/.local/share/vifm/Trash/000_Cu75vkBECPrGaHtklbOgZZEJ2_-2VEa5xNrKJ2CRAmc.webp
+	/home/rod/.wallpapers/Cu75vkBECPrGaHtklbOgZZEJ2_-2VEa5xNrKJ2CRAmc.webp
+t/home/rod/.local/share/vifm/Trash/000_CvXnucxUMAAh47y.jpg
+	/home/rod/.wallpapers/CvXnucxUMAAh47y.jpg
+t/home/rod/.local/share/vifm/Trash/000_D1dtwjSVsAcNUtI.jpg
+	/home/rod/.wallpapers/D1dtwjSVsAcNUtI.jpg
+t/home/rod/.local/share/vifm/Trash/000_DDPOhv0VwAEl5b0.jpg
+	/home/rod/.wallpapers/DDPOhv0VwAEl5b0.jpg
+t/home/rod/.local/share/vifm/Trash/000_DhG4f4MUwAcV66R.jpg
+	/home/rod/.wallpapers/DhG4f4MUwAcV66R.jpg
+t/home/rod/.local/share/vifm/Trash/000_Sat.jpg
+	/home/rod/.wallpapers/Sat.jpg
+t/home/rod/.local/share/vifm/Trash/000_SatInverted.jpg
+	/home/rod/.wallpapers/SatInverted.jpg
+t/home/rod/.local/share/vifm/Trash/000_SatNew.jpg
+	/home/rod/.wallpapers/SatNew.jpg
+t/home/rod/.local/share/vifm/Trash/000_alena-aenami-eternity-1080px.jpg
+	/home/rod/.wallpapers/alena-aenami-eternity-1080px.jpg
+t/home/rod/.local/share/vifm/Trash/000_alena-aenami-ice1920.jpg
+	/home/rod/.wallpapers/alena-aenami-ice1920.jpg
+t/home/rod/.local/share/vifm/Trash/000_alena-aenami-quiet-1px.jpg
+	/home/rod/.wallpapers/alena-aenami-quiet-1px.jpg
+t/home/rod/.local/share/vifm/Trash/000_b7d355df9c52fbeb69d9183eb0de482e66ab0f65.jpg
+	/home/rod/.wallpapers/b7d355df9c52fbeb69d9183eb0de482e66ab0f65.jpg
+t/home/rod/.local/share/vifm/Trash/000_cf5a73fe0f1f4a0cd58a38b04219a0167354f87f.jpg
+	/home/rod/.wallpapers/cf5a73fe0f1f4a0cd58a38b04219a0167354f87f.jpg
+t/home/rod/.local/share/vifm/Trash/000_eb7038bd4a9923662f0c4df2c200df30297518e6.jpg
+	/home/rod/.wallpapers/eb7038bd4a9923662f0c4df2c200df30297518e6.jpg
+t/home/rod/.local/share/vifm/Trash/000_f6bb5cb5d9449ce68f082d818700ef35f8dc0f78.jpg
+	/home/rod/.wallpapers/f6bb5cb5d9449ce68f082d818700ef35f8dc0f78.jpg
+t/home/rod/.local/share/vifm/Trash/000_f4825a56eeb1d52ada551d83f787a0caa2c5d787.jpg
+	/home/rod/.wallpapers/f4825a56eeb1d52ada551d83f787a0caa2c5d787.jpg
+t/home/rod/.local/share/vifm/Trash/000_g18wm99vy3i51.jpg
+	/home/rod/.wallpapers/g18wm99vy3i51.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-01699g.jpg
+	/home/rod/.wallpapers/wallhaven-01699g.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-0j8rkm.jpg
+	/home/rod/.wallpapers/wallhaven-0j8rkm.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-0joomm.png
+	/home/rod/.wallpapers/wallhaven-0joomm.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-0jq6rw.jpg
+	/home/rod/.wallpapers/wallhaven-0jq6rw.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-0jvj6p.jpg
+	/home/rod/.wallpapers/wallhaven-0jvj6p.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-0pedge.jpg
+	/home/rod/.wallpapers/wallhaven-0pedge.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-0qkj77.jpg
+	/home/rod/.wallpapers/wallhaven-0qkj77.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-0wzwvr.jpg
+	/home/rod/.wallpapers/wallhaven-0wzwvr.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-1je581.jpg
+	/home/rod/.wallpapers/wallhaven-1je581.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-1jm8xg.jpg
+	/home/rod/.wallpapers/wallhaven-1jm8xg.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-2e1dl9.jpg
+	/home/rod/.wallpapers/wallhaven-2e1dl9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-2e8v5x.png
+	/home/rod/.wallpapers/wallhaven-2e8v5x.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-2e69yg.jpg
+	/home/rod/.wallpapers/wallhaven-2e69yg.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-2evmm9.jpg
+	/home/rod/.wallpapers/wallhaven-2evmm9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-2k87mm.jpg
+	/home/rod/.wallpapers/wallhaven-2k87mm.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-2kj7k6.jpg
+	/home/rod/.wallpapers/wallhaven-2kj7k6.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-3k7l93.jpg
+	/home/rod/.wallpapers/wallhaven-3k7l93.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-3k7l93alt.jpg
+	/home/rod/.wallpapers/wallhaven-3k7l93alt.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-3kejdy.jpg
+	/home/rod/.wallpapers/wallhaven-3kejdy.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4lepp0.jpg
+	/home/rod/.wallpapers/wallhaven-4lepp0.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4lq6p0.jpg
+	/home/rod/.wallpapers/wallhaven-4lq6p0.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4ow6y7.jpg
+	/home/rod/.wallpapers/wallhaven-4ow6y7.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4v6e53.jpg
+	/home/rod/.wallpapers/wallhaven-4v6e53.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4vd6q3.jpg
+	/home/rod/.wallpapers/wallhaven-4vd6q3.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4x1jpd.jpg
+	/home/rod/.wallpapers/wallhaven-4x1jpd.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4x3l2d.jpg
+	/home/rod/.wallpapers/wallhaven-4x3l2d.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4xwel0.jpg
+	/home/rod/.wallpapers/wallhaven-4xwel0.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4y8rjk.jpg
+	/home/rod/.wallpapers/wallhaven-4y8rjk.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4y63pd.jpg
+	/home/rod/.wallpapers/wallhaven-4y63pd.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4y9287.png
+	/home/rod/.wallpapers/wallhaven-4y9287.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4ydzzl.png
+	/home/rod/.wallpapers/wallhaven-4ydzzl.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4ygm5g.jpg
+	/home/rod/.wallpapers/wallhaven-4ygm5g.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-4yke3l.jpg
+	/home/rod/.wallpapers/wallhaven-4yke3l.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-5d8jq3.png
+	/home/rod/.wallpapers/wallhaven-5d8jq3.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-5w77v3.jpg
+	/home/rod/.wallpapers/wallhaven-5w77v3.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-5w81w8.jpg
+	/home/rod/.wallpapers/wallhaven-5w81w8.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-5weyz8.jpg
+	/home/rod/.wallpapers/wallhaven-5weyz8.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-6kxmj6.jpg
+	/home/rod/.wallpapers/wallhaven-6kxmj6.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-8x1k1k.jpg
+	/home/rod/.wallpapers/wallhaven-8x1k1k.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-8xy3l2.png
+	/home/rod/.wallpapers/wallhaven-8xy3l2.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-13ygq9.jpg
+	/home/rod/.wallpapers/wallhaven-13ygq9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-39q7j9.jpg
+	/home/rod/.wallpapers/wallhaven-39q7j9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-39z1jv.jpg
+	/home/rod/.wallpapers/wallhaven-39z1jv.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-39zzv6.jpg
+	/home/rod/.wallpapers/wallhaven-39zzv6.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-42kmd9.jpg
+	/home/rod/.wallpapers/wallhaven-42kmd9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-43kyk6.jpg
+	/home/rod/.wallpapers/wallhaven-43kyk6.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-45j2w8.jpg
+	/home/rod/.wallpapers/wallhaven-45j2w8.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-73volv.jpg
+	/home/rod/.wallpapers/wallhaven-73volv.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-95rpjd.jpg
+	/home/rod/.wallpapers/wallhaven-95rpjd.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-95wey8.png
+	/home/rod/.wallpapers/wallhaven-95wey8.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-96kewd.jpg
+	/home/rod/.wallpapers/wallhaven-96kewd.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-96mxrx.jpg
+	/home/rod/.wallpapers/wallhaven-96mxrx.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-96mxv8.jpg
+	/home/rod/.wallpapers/wallhaven-96mxv8.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-392p2d.jpg
+	/home/rod/.wallpapers/wallhaven-392p2d.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-422k36.jpg
+	/home/rod/.wallpapers/wallhaven-422k36.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-492vjx.jpg
+	/home/rod/.wallpapers/wallhaven-492vjx.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-497x8k.jpg
+	/home/rod/.wallpapers/wallhaven-497x8k.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-738w79.jpg
+	/home/rod/.wallpapers/wallhaven-738w79.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-767lmy.jpg
+	/home/rod/.wallpapers/wallhaven-767lmy.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-839ppy.png
+	/home/rod/.wallpapers/wallhaven-839ppy.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-1332xg.jpg
+	/home/rod/.wallpapers/wallhaven-1332xg.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-7377j9.jpg
+	/home/rod/.wallpapers/wallhaven-7377j9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-d5e97j.jpg
+	/home/rod/.wallpapers/wallhaven-d5e97j.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-dg15jg.png
+	/home/rod/.wallpapers/wallhaven-dg15jg.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-dgzy73.jpg
+	/home/rod/.wallpapers/wallhaven-dgzy73.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-eo7qjl.jpg
+	/home/rod/.wallpapers/wallhaven-eo7qjl.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-ey6rrl.png
+	/home/rod/.wallpapers/wallhaven-ey6rrl.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-ey15jk.jpg
+	/home/rod/.wallpapers/wallhaven-ey15jk.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-g8e3ze.jpg
+	/home/rod/.wallpapers/wallhaven-g8e3ze.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-g8r9wl.jpg
+	/home/rod/.wallpapers/wallhaven-g8r9wl.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-g8vj13.jpg
+	/home/rod/.wallpapers/wallhaven-g8vj13.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-gjqvld.png
+	/home/rod/.wallpapers/wallhaven-gjqvld.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-j5kr8p.jpg
+	/home/rod/.wallpapers/wallhaven-j5kr8p.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-j5loe5.jpg
+	/home/rod/.wallpapers/wallhaven-j5loe5.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-j51gkp.png
+	/home/rod/.wallpapers/wallhaven-j51gkp.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-j83ly5.jpg
+	/home/rod/.wallpapers/wallhaven-j83ly5.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-j816vp.jpg
+	/home/rod/.wallpapers/wallhaven-j816vp.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-j817l5.jpg
+	/home/rod/.wallpapers/wallhaven-j817l5.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-k9lzv1.jpg
+	/home/rod/.wallpapers/wallhaven-k9lzv1.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-k933g7.jpg
+	/home/rod/.wallpapers/wallhaven-k933g7.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-k9181m.jpg
+	/home/rod/.wallpapers/wallhaven-k9181m.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-kwe3d6.jpg
+	/home/rod/.wallpapers/wallhaven-kwe3d6.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-kwvk5d.jpg
+	/home/rod/.wallpapers/wallhaven-kwvk5d.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-lmo8wp.jpg
+	/home/rod/.wallpapers/wallhaven-lmo8wp.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-lmojop.jpg
+	/home/rod/.wallpapers/wallhaven-lmojop.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-lqdyol.jpg
+	/home/rod/.wallpapers/wallhaven-lqdyol.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-lqmm5l.jpg
+	/home/rod/.wallpapers/wallhaven-lqmm5l.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-md2o39.jpg
+	/home/rod/.wallpapers/wallhaven-md2o39.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-md9je9.jpg
+	/home/rod/.wallpapers/wallhaven-md9je9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-mdr8o1.jpg
+	/home/rod/.wallpapers/wallhaven-mdr8o1.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-mdrlj1.jpg
+	/home/rod/.wallpapers/wallhaven-mdrlj1.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-mp16y1.jpg
+	/home/rod/.wallpapers/wallhaven-mp16y1.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-mpwjr9.jpg
+	/home/rod/.wallpapers/wallhaven-mpwjr9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-n61pex.jpg
+	/home/rod/.wallpapers/wallhaven-n61pex.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-nepdrr.jpg
+	/home/rod/.wallpapers/wallhaven-nepdrr.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-nk5pq7.jpg
+	/home/rod/.wallpapers/wallhaven-nk5pq7.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-nk267d.jpg
+	/home/rod/.wallpapers/wallhaven-nk267d.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-nrl11j.jpg
+	/home/rod/.wallpapers/wallhaven-nrl11j.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-nzlopy.jpg
+	/home/rod/.wallpapers/wallhaven-nzlopy.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-odz9op.jpg
+	/home/rod/.wallpapers/wallhaven-odz9op.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-ox3q97.jpg
+	/home/rod/.wallpapers/wallhaven-ox3q97.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-ox7gq9.jpg
+	/home/rod/.wallpapers/wallhaven-ox7gq9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-ox9315.jpg
+	/home/rod/.wallpapers/wallhaven-ox9315.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-oxeyr5.jpg
+	/home/rod/.wallpapers/wallhaven-oxeyr5.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-oxrz6l.jpg
+	/home/rod/.wallpapers/wallhaven-oxrz6l.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-oxvkxp.jpg
+	/home/rod/.wallpapers/wallhaven-oxvkxp.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-p2rre3.jpg
+	/home/rod/.wallpapers/wallhaven-p2rre3.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-p8px2j.jpg
+	/home/rod/.wallpapers/wallhaven-p8px2j.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-p8vj53.jpg
+	/home/rod/.wallpapers/wallhaven-p8vj53.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-p827w9.jpg
+	/home/rod/.wallpapers/wallhaven-p827w9.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-p899ze.jpg
+	/home/rod/.wallpapers/wallhaven-p899ze.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-q6m557.png
+	/home/rod/.wallpapers/wallhaven-q6m557.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-q6y29d.png
+	/home/rod/.wallpapers/wallhaven-q6y29d.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-q65ol7.jpg
+	/home/rod/.wallpapers/wallhaven-q65ol7.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-qd3r37.jpg
+	/home/rod/.wallpapers/wallhaven-qd3r37.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-qd7dg5.jpg
+	/home/rod/.wallpapers/wallhaven-qd7dg5.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-qdeqp7.jpg
+	/home/rod/.wallpapers/wallhaven-qdeqp7.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-r2lv6m.jpg
+	/home/rod/.wallpapers/wallhaven-r2lv6m.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-r25x6m.png
+	/home/rod/.wallpapers/wallhaven-r25x6m.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-r29opj.jpg
+	/home/rod/.wallpapers/wallhaven-r29opj.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-vg1epm.jpg
+	/home/rod/.wallpapers/wallhaven-vg1epm.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-vg96ll.jpg
+	/home/rod/.wallpapers/wallhaven-vg96ll.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-vgm3wm.jpg
+	/home/rod/.wallpapers/wallhaven-vgm3wm.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-vmo5em.jpg
+	/home/rod/.wallpapers/wallhaven-vmo5em.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-w8zw66.jpg
+	/home/rod/.wallpapers/wallhaven-w8zw66.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-wy9j2r.jpg
+	/home/rod/.wallpapers/wallhaven-wy9j2r.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-wyrk8r.jpg
+	/home/rod/.wallpapers/wallhaven-wyrk8r.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-x1dqg3.jpg
+	/home/rod/.wallpapers/wallhaven-x1dqg3.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-x17xyz.jpg
+	/home/rod/.wallpapers/wallhaven-x17xyz.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-xl2mov.jpg
+	/home/rod/.wallpapers/wallhaven-xl2mov.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-xl8qgz.jpg
+	/home/rod/.wallpapers/wallhaven-xl8qgz.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-xlrm5z.png
+	/home/rod/.wallpapers/wallhaven-xlrm5z.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-yj7j6k.jpg
+	/home/rod/.wallpapers/wallhaven-yj7j6k.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-yjm927.jpg
+	/home/rod/.wallpapers/wallhaven-yjm927.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-yjpmyk.jpg
+	/home/rod/.wallpapers/wallhaven-yjpmyk.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-ymwj9d.jpg
+	/home/rod/.wallpapers/wallhaven-ymwj9d.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-zm5pxv.jpg
+	/home/rod/.wallpapers/wallhaven-zm5pxv.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-zm9dky.png
+	/home/rod/.wallpapers/wallhaven-zm9dky.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-zmd22w.png
+	/home/rod/.wallpapers/wallhaven-zmd22w.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-zmjklg.jpg
+	/home/rod/.wallpapers/wallhaven-zmjklg.jpg
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-zmwv9y.png
+	/home/rod/.wallpapers/wallhaven-zmwv9y.png
+t/home/rod/.local/share/vifm/Trash/000_wallhaven-zxr38v.png
+	/home/rod/.wallpapers/wallhaven-zxr38v.png
+t/home/rod/.local/share/vifm/Trash/000_wp1.jpg
+	/home/rod/.wallpapers/wp1.jpg
 
 # State:
 f

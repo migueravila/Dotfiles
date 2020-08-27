@@ -1,9 +1,8 @@
-# _   _               _  __ _ _           
-#| \ | |             | |/ _(_) |          
-#|  \| | ___  _ __ __| | |_ _| | ___  ___ 
-#| . ` |/ _ \| '__/ _` |  _| | |/ _ \/ __|
-#| |\  | (_) | | | (_| | | | | |  __/\__ \
-#\_| \_/\___/|_|  \__,_|_| |_|_|\___||___/
+#  ____        _    __ _ _           
+# |  _ \  ___ | |_ / _(_) | ___  ___ 
+# | | | |/ _ \| __| |_| | |/ _ \/ __|
+# | |_| | (_) | |_|  _| | |  __/\__ \
+# |____/ \___/ \__|_| |_|_|\___||___/
 
                                                        
 #########################################################################
@@ -22,7 +21,7 @@ exec_always ~/.config/polybar/launch.sh
 smart_borders on
 set $inner_gaps 10
 set $outer_gaps -2
-set $top_gaps 25
+set $top_gaps 20
 set $term --no-startup-id st
 set $sterm --no-startup-id alacritty
 set $mod Mod4
@@ -67,7 +66,6 @@ bindsym $mod+Shift+Return exec $sterm
 # space (Quick actions)
 bindsym $mod+space exec --no-startup-id dmenu_run -p '' 
 bindsym $mod+Shift+space "mark --add _; [con_mark=f] floating disable, border none, mark --add --toggle _; [con_mark=_] floating enable, border pixel 0; mark --add --toggle f;"
-bindsym $mod+Ctrl+space exec =
 
 #q (Quit)
 bindsym $mod+q kill
@@ -83,54 +81,45 @@ bindsym $mod+Shift+l restart
 
 # y (Screenshots)
 bindsym $mod+y exec flameshot full -p ~/Pictures/Screenshots
-bindsym $mod+Shift+y exec flameshot gui -d 500
+bindsym $mod+Shift+y exec flameshot gui -d 700
 
 # a (Layout)
-bindsym $mod+a layout tabbed
-bindsym $mod+Shift+a [urgent=latest] focus
+bindsym $mod+a gaps inner all set 15; gaps outer all set 15; gaps top all set 30; exec notify-send '💫 Show mode'
 
-# s (Tile)
-bindsym $mod+s split h;exec notify-send '⬆️ tile horizontally'
-bindsym $mod+Shift+s split v;exec notify-send '➡️ tile vertically'
+# s (Dmenu utilities 1)
+bindsym $mod+s exec =
+bindsym $mod+Shift+s exec dtodo
 
-# e (gaps)
-bindsym $mod+e gaps outer current plus 5; 
-bindsym $mod+Shift+e gaps outer current minus 5
-
-# d (dir)
+# d (Dmenu utilities 2)
 bindsym $mod+d exec bmkm
+bindsym $mod+Shift+d exec search
 
-
-# f (files)
+# f (Dmenu utilities 3)
 bindsym $mod+f exec bmkf
 bindsym $mod+Shift+f exec demoji
 
 # g (Toggle gaps)
 bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0; border pixel 0
-bindsym $mod+g gaps inner all set 10; gaps outer all set -2; gaps top all set 18;
+bindsym $mod+g gaps inner all set 10; gaps outer all set -2; gaps top all set 20;
 
 # z (Browsers)
 bindsym $mod+z exec firefox
 bindsym $mod+Shift+z exec brave
 
 # x (File managers)
-bindsym $mod+x exec $term -e 'vifm'
+bindsym $mod+x exec $term -e ~/.config/vifm/scripts/vifmrun
 bindsym $mod+Shift+x exec pcmanfm
 
-# c
+# c (Picom)
 bindsym $mod+c exec --no-startup-id picom -b
 bindsym $mod+Shift+c exec --no-startup-id killall picom 
 
-# v
+# v (development)
 bindsym $mod+v exec --no-startup-id code
-bindsym $mod+Shift+v exec $sterm -e 'ytop'
+bindsym $mod+Shift+v exec $sterm -e ~/.scripts/marktext-x86_64.AppImage & 
 
-# m 
-bindsym $mod+m fullscreen toggle
-bindsym $mod+Shift+m exec dmenu_run -c -l 10
-
-# b (Polybar autohide)
-bindsym $mod+b exec polybar-msg cmd toggle
+# m (fullscreen) 
+bindsym $mod+m fullscreen toggle; exec polybar-msg cmd toggle;
 
 # Arrow Keys 
 bindsym $mod+Left		      focus left
@@ -187,8 +176,8 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_S
 
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioPause exec mpc stop
-bindsym XF86AudioNext exec mpc stop
-bindsym XF86AudioPrevius exec mpc stop
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
 
 #########################################################################
 ## i3 Config

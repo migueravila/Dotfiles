@@ -14,11 +14,11 @@ song_library_format = {%n - }{%t}|{%f}
 
 alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
 alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
-song_columns_list_format = (7f)[green]{l} (20)[cyan]{a} (50)[yellow]{t|f:Title} (20)[magenta]{b}
+song_columns_list_format = (7f)[yellow]{l} (50)[yellow]{t|f:Title}
 
-current_item_prefix = $(cyan)$r$b
+current_item_prefix = $(yellow)$r$b
 current_item_suffix = $/r$(end)$/b
-current_item_inactive_column_prefix = $(magenta)$r
+current_item_inactive_column_prefix = $(red)$r
 current_item_inactive_column_suffix = $/r$(end)
 playlist_display_mode = columns
 browser_display_mode = columns
@@ -40,14 +40,14 @@ ignore_leading_the = yes
 
 external_editor = nvim
 use_console_editor = yes
-empty_tag_color = magenta
+empty_tag_color = red
 main_window_color = white
 progressbar_color = black:b
-progressbar_elapsed_color = blue:b
+progressbar_elapsed_color = yellow:b
 
 statusbar_color = white
 
-statusbar_time_color = cyan:b
+statusbar_time_color = yellow:b
 
 execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%album%' current)"
 
