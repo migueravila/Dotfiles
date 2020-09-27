@@ -68,7 +68,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x0-40+40"
+    geometry = "0x0-9+30"
     corner_radius = 2
     
     # Shrink window if it's smaller than the width.  Will be ignored if
@@ -182,16 +182,16 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#0F0F0F"
+    background = "#1C1B1D"
     foreground = "#D8DEE9"
     timeout = 10
 
 [urgency_normal]
-    background = "#0F0F0F"
+    background = "#1C1B1D"
     foreground = "#D8DEE9"
     timeout = 10
 
 [urgency_critical]
-    background = "#0F0F0F"
+    background = "#1C1B1D"
     foreground = "#D8DEE9"
     timeout = 0
