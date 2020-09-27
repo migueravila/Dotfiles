@@ -81,7 +81,7 @@ font:
     normal:
         # Font family
         family: JetBrains Mono
-        style: Bold
+        style: Regular
         # Default:
         #   - (macOS) Menlo
         #   - (Linux/BSD) monospace
@@ -124,7 +124,7 @@ font:
     #style: Bold Italic
 
     # Point size
-    size: 10
+    size: 9.5
 
     # Offset is the extra space around each character. `offset.y` can be thought of
     # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -159,29 +159,29 @@ font:
 #Colors (Tomorrow Night Bright)
 colors:
     primary:
-        background: '#0f0f0f'
+        background: '#1C1B1D'
         foreground: '#D8D8D8'
     cursor:
-        text: '#0f0f0f'
+        text: '#1C1B1D'
         cursor: '#D8D8D8'
     normal:
         black: '#24272a'
-        red: '#e68183'
-        green: '#87af87'
-        yellow: '#d9bb80'
-        blue: '#89beba'
-        magenta: '#d3a0bc'
-        cyan: '#7CAFC2'
-        white: '#E5E9F0'
+        red: '#E06C75'
+        green: '#98C379'
+        yellow: '#E5C07B'
+        blue: '#61AFEF'
+        magenta: '#C678DD'
+        cyan: '#56B6C2'
+        white: '#D8D8D8'
     bright:
         black: '#D8D8D8'
-        red: '#e68183'
-        green: '#87af87'
-        yellow: '#d9bb80'
-        blue: '#89beba'
-        magenta: '#d3a0bc'
-        cyan: '#7CAFC2'
-        white: '#ECEFF4'
+        red: '#E06C75'
+        green: '#98C379'
+        yellow: '#E5C07B'
+        blue: '#61AFEF'
+        magenta: '#C678DD'
+        cyan: '#56B6C2'
+        white: '#D8D8D8'
 
     # Dim colors
     #
@@ -236,7 +236,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: .85
+background_opacity: .9
 
 #selection:
 #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
