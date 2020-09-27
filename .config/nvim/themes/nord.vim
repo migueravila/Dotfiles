@@ -1,2 +1,0 @@
-g:miramare_transparent_background 1
-colorscheme miramare
