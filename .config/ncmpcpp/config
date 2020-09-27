@@ -14,9 +14,9 @@ song_library_format = {%n - }{%t}|{%f}
 
 alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
 alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
-song_columns_list_format = (7f)[yellow]{l} (50)[yellow]{t|f:Title}
+song_columns_list_format = (7f)[green]{l} (50)[green]{t|f:Title}
 
-current_item_prefix = $(yellow)$r$b
+current_item_prefix = $(blue)$r$b
 current_item_suffix = $/r$(end)$/b
 current_item_inactive_column_prefix = $(red)$r
 current_item_inactive_column_suffix = $/r$(end)
@@ -43,7 +43,7 @@ use_console_editor = yes
 empty_tag_color = red
 main_window_color = white
 progressbar_color = black:b
-progressbar_elapsed_color = yellow:b
+progressbar_elapsed_color = green:b
 
 statusbar_color = white
 
