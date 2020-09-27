@@ -47,9 +47,9 @@
 highlight clear
 
 highlight Win cterm=none ctermfg=default ctermbg=default
-highlight Directory cterm=bold ctermfg=yellow ctermbg=default
+highlight Directory cterm=bold ctermfg=green ctermbg=default
 highlight Link cterm=bold ctermfg=default ctermbg=default
-highlight BrokenLink cterm=bold ctermfg=red ctermbg=default
+highlight BrokenLink cterm=bold ctermfg=blue ctermbg=default
 highlight Socket cterm=bold ctermfg=magenta ctermbg=default
 highlight Device cterm=bold ctermfg=red ctermbg=default
 highlight Fifo cterm=bold ctermfg=cyan ctermbg=default

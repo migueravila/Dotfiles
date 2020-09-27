@@ -26,162 +26,9 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/rod/.wallpapers
-	..
-0
-d/home/rod
-	.wallpapers
-20
-d/home/rod/.wallpapers
-	..
-0
-d/home/rod
-	.wallpapers
-20
-d/home/rod/.wallpapers
-	..
-0
-d/home/rod
-	.config
-3
-d/home/rod/.config
-	bashtop
-9
-d/home/rod/.config/bashtop
-	themes
-1
-d/home/rod/.config/bashtop/themes
-	..
-0
-d/home/rod/.config/bashtop
-	user_themes
-2
-d/home/rod/.config/bashtop/user_themes
-	..
-0
-d/home/rod/.config/bashtop
-	themes
-1
-d/home/rod/.config/bashtop/themes
-	monokai.theme
+d/usr
+	local
 6
-d/home/rod/.config
-	..
-0
-d/home/rod
-	.config
-3
-d/home/rod/.config
-	BetterDiscord
-1
-d/home/rod
-	.cargo
-2
-d/home
-	rod
-1
-d/
-	bin
-0
-d/bin
-	..
-0
-d/
-	opt
-9
-d/opt
-	discord
-1
-d/opt/discord
-	locales
-1
-d/opt
-	shell-color-scripts
-2
-d/opt/shell-color-scripts
-	..
-0
-d/opt
-	shell-color-scripts
-2
-d/
-	root
-11
-d/root
-	.config
-2
-d/root/.config
-	..
-0
-d/root
-	.config
-2
-d/
-	root
-11
-d/root
-	.config
-2
-d/root/.config
-	Kvantum
-1
-d/root
-	.i3
-5
-d/root/.i3
-	..
-0
-d/root
-	.icons
-6
-d/root/.icons
-	..
-0
-d/root
-	.profile
-19
-d/
-	root
-11
-d/root
-	.profile
-19
-d/
-	bin
-0
-d/bin
-	..
-0
-d/
-	opt
-9
-d/opt
-	..
-0
-d/
-	opt
-9
-d/opt
-	discord
-1
-d/opt/discord
-	resources
-2
-d/opt/discord/resources
-	app
-1
-d/opt/discord/resources/app
-	..
-0
-d/opt/discord/resources
-	..
-0
-d/opt/discord
-	resources
-2
-d/opt
-	discord
-1
 d/
 	home
 4
@@ -190,142 +37,295 @@ d/home
 1
 d/home/rod
 	.wallpapers
-20
+22
 d/home/rod/.wallpapers
-	wallhaven-d57k83.jpg
-11
-d/home/rod
-	..
-0
-d/home
-	rod
-1
-d/home/rod
-	Downloads
-9
-d/home/rod/Downloads
-	CatalogoIESmovilidadvirtual2020jul10protegida.xlsx
-12
-d/home/rod
-	..
-0
-d/home
-	rod
-1
-d/home/rod
-	Downloads
-23
-d/home/rod/Downloads
-	CatalogoIESmovilidadvirtual2020jul10protegida.xlsx
-12
-d/home/rod
-	.wallpapers
+	Atey-Ghailan-ART-screenshot-85642-wallhere.com.jpg
 7
-d/home/rod/.wallpapers
-	Calm.jpg
-11
 d/home/rod
-	Downloads
-23
-d/home/rod/Downloads
-	Invictus.pdf
-6
-d/home/rod
-	.wallpapers
-20
-d/home/rod/.wallpapers
-	atey-ghailan-garden-words-final.jpg
-11
-d/home/rod
-	.wallpapers
-11
-d/home/rod/.wallpapers
-	atey-ghailan-garden-words-final.jpg
-11
-d/home/rod
-	.thumbnails
-9
-d/home/rod/.thumbnails
-	..
-0
-d/home/rod
-	.wallpapers
-20
-d/home/rod/.wallpapers
-	atey-ghailan-219.jpg
-12
-d/home/rod
-	..
-0
-d/home
-	rod
-1
-d/
-	home
-4
-d/home
-	rod
-1
-d/home/rod
-	.wallpapers
-4
-d/home/rod/.wallpapers
-	236_365_sit_by_snatti89_d9vo9ej.png
-5
-d/home/rod
-	Documents
-6
-d/home/rod/Documents
-	..
-0
-d/home/rod
-	Downloads
-7
-d/home/rod/Downloads
-	Invictus.pdf
-6
-d/home/rod/.themes/NoName
-	..
-0
+	.themes
+19
 d/home/rod/.themes
 	NoName
 4
 d/home/rod
-	.themes
+	.ssr
+17
+d/home/rod/Public/Node/Node_Course/Asynchronus
+	..
+0
+d/home/rod/Public/Node/Node_Course
+	Asynchronus
+2
+d/home/rod/Public/Node
+	Node_Course
+1
+d/home/rod/Public
+	Node
+2
+d/home/rod
+	Pictures
+27
+d/home/rod/Pictures
+	Screenshots
 4
-d/home
-	rod
+d/home/rod/Pictures/Screenshots
+	2020-08-31_19-15-15.png
+9
+d/home/rod/Public/Web/CssCourse
+	..
+0
+d/home/rod/Public/Web
+	CssCourse
+1
+d/home/rod/Public
+	Web
+7
+d/home/rod
+	Downloads
+25
+d/home/rod/Downloads
+	C045_Fundamentos de Ingeniería de Software
+1
+d/home/rod
+	Documents
+24
+d/home/rod/Documents
+	Books
+1
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents/Books/Novels
+	SAO
+3
+d/home/rod/Documents/Books/Novels/SAO
+	Progressive 06.pdf
+6
+d/home/rod/Documents/Books/Novels
+	SAO
+3
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents
+	Books
 1
 d/home/rod
 	Downloads
-5
+25
 d/home/rod/Downloads
-	CatalogoIESmovilidadvirtual2020jul10protegida.xlsx
-9
+	Inscription
+3
+d/home/rod/Downloads/Inscription
+	Convocatoria_SEP_2020-FEB_2021-Reinscripción_-_v2.pdf
+2
+d/home/rod/Downloads
+	Inscription
+3
 d/home/rod
 	Downloads
+25
+d/home
+	..
+0
+d/
+	etc
+3
+d/etc
+	..
+0
+d/
+	bin
+0
+d/bin
+	..
+0
+d/
+	lib
 5
+d/lib
+	..
+0
+d/
+	home
+4
 d/home
 	rod
 1
 d/home/rod
 	.wallpapers
-4
+22
 d/home/rod/.wallpapers
-	186_365_path_of_miranda_last_of_its_kind_by_snatti89_d9pmhye.png
-4
+	..
+0
 d/home/rod
-	.themes
+	.thumbnails
+20
+d/home
+	rod
+1
+d/home/rod
+	.newsboat
+10
+d/home
+	rod
+1
+d/
+	bin
+0
+d/bin
+	betterlockscreen
+32
+d/
+	home
 4
 d/home
 	rod
 1
 d/home/rod
+	.fonts
+4
+d/home/rod/.fonts
+	..
+0
+d/home/rod
+	.config
+3
+d/home/rod/.config
+	htop
+27
+d/home/rod
+	.oh-my-zsh
+12
+d/home/rod/.oh-my-zsh
+	custom
+4
+d/home/rod/.oh-my-zsh/custom
+	themes
+2
+d/home/rod/.oh-my-zsh/custom/themes
+	hyperzsh.zsh-theme
+2
+d/home/rod/.oh-my-zsh/custom
+	themes
+2
+d/home/rod/.oh-my-zsh
+	custom
+4
+d/home/rod
+	.wallpapers
+22
+d/home/rod/.wallpapers
+	.comments
+1
+d/home/rod
 	Downloads
-7
+25
 d/home/rod/Downloads
-	Invictus.pdf
-14
+	School
+4
+d/home/rod/Downloads/School
+	..
+0
+d/home/rod/Downloads
+	School
+4
+d/home/rod
+	Documents
+24
+d/home/rod/Documents
+	Files
+3
+d/home/rod/Documents/Files
+	School
+3
+d/home/rod/Documents/Files/School
+	3° Semester
+2
+d/home/rod/Documents/Files/School/3° Semester
+	Teoría de la Computación
+4
+d/home/rod/Documents/Files/School/3° Semester/Teoría de la Computación
+	Ada1-Lectura.pdf
+2
+d/home/rod/Documents/Files/School/3° Semester
+	Teoría de la Computación
+4
+d/home/rod/Documents/Files/School
+	3° Semester
+2
+d/home/rod/Documents/Files
+	School
+3
+d/home/rod/Documents
+	Files
+3
+d/home/rod
+	Pictures
+27
+d/home/rod/Pictures
+	Screenshots
+4
+d/home/rod/Pictures/Screenshots
+	2020-09-23_06-18-23.png
+24
+d/home/rod/Pictures
+	Photos
+2
+d/home/rod
+	Pictures
+27
+d/home/rod/Pictures
+	SW
+3
+d/home/rod/Pictures/SW
+	..
+0
+d/home/rod/Pictures
+	SW
+3
+d/home/rod
+	Pictures
+27
+d/home/rod/Pictures
+	SW
+3
+d/home/rod/Pictures/SW
+	Ph
+1
+d/home/rod/Pictures/SW/Ph
+	Ehmkn8iWkAEFLed.jpg
+2
+d/home/rod/Pictures/SW
+	Ph
+1
+d/home/rod/Pictures/SW/Ph
+	IMG-20190716-WA0009.jpg
+3
+d/home/rod/Pictures/SW
+	Ph
+1
+d/home/rod/Pictures
+	SW
+3
+d/home/rod
+	Documents
+24
+d/home/rod/Documents
+	Files
+3
+d/home/rod/Documents/Files
+	School
+3
+d/home/rod/Documents/Files/School
+	3° Semester
+2
+d/home/rod/Documents/Files/School/3° Semester
+	Teoría de la Computación
+4
+d/home/rod/Documents/Files/School/3° Semester/Teoría de la Computación
+	ADA1-Antecedentes.pdf
+1
 d
 
 # Right window history (oldest to newest):
@@ -375,8 +375,11 @@ D/home/rod
 	.wallpapers
 4
 D/home/rod/.wallpapers
-	Warm.jpg
+	wallhaven-2e372x.jpg
 8
+D/home/rod
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -391,6 +394,7 @@ D
 :only
 :vsplit
 :cw 
+:remove
 :delete
 :q
 
@@ -404,6 +408,11 @@ D
 /bash
 /electron
 /inv
+/dmenu
+/bin
+/cldme
+/c
+/better
 
 # Prompt history (oldest to newest):
 pWallpaper 1
