@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Dotfiles: 🏠 The home of my config files</h1>
+<h1>Dotfiles</h1>
 <h3>🏠 The home of my config files</h1>
 </div>
 
