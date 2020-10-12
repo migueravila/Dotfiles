@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Dotfiles</h1>
-<b>🏠 The home of my config files</b>
+🏠 The home of my config files
 </div>
 
 <p align="center">
@@ -22,4 +22,3 @@
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build of **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
 - All my dmenu **scripts** [DmenuScripts](https://github.com/MiguelRAvila/DmenuScripts)
-
