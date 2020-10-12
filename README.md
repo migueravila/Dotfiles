@@ -20,4 +20,5 @@
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build of **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
+- All my dmenu **scripts** [DmenuScripts](https://github.com/MiguelRAvila/DmenuScripts)
 
