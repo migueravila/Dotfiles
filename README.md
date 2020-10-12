@@ -1,8 +1,10 @@
-# Dotfiles
+<div align="center">
+<h1>Dotfiles: 🏠 The home of my config files</h1>
+</div>
 
-> ### 🏠 The home of my config files
-
-![](https://github.com/MiguelRAvila/RelaxedDotfiles/blob/master/rsc/preview1.png)
+<p align="center">
+  <img src="https://github.com/MiguelRAvila/ZenDmenu/blob/master/rsc/ss.png">
+</p>
 
 ### In this repo you can find:
 
@@ -19,6 +21,3 @@
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build of **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
 
-![](https://github.com/MiguelRAvila/RelaxedDotfiles/blob/master/rsc/previewe.png)
-
-![](https://github.com/MiguelRAvila/RelaxedDotfiles/blob/master/rsc/preview2.png)
