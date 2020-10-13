@@ -20,6 +20,6 @@
 - The build of **Dmenu**: [⚡CleanDmenu](https://github.com/MiguelRAvila/CleanDmenu)
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
-- The build of **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
+- The build the st terminal **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
 - All my dmenu **scripts** [DmenuScripts](https://github.com/MiguelRAvila/DmenuScripts)
 
