@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Dotfiles</h1>
-<b>🏠 The home of my config files</b>
+<b>🌱 Ghibli inspired dotfiles</b>
 </div>
 
 <p align="center">
