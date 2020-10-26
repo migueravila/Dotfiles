@@ -26,306 +26,306 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/usr
-	local
-6
-d/
-	home
-4
-d/home
-	rod
-1
-d/home/rod
-	.wallpapers
-22
-d/home/rod/.wallpapers
-	Atey-Ghailan-ART-screenshot-85642-wallhere.com.jpg
-7
-d/home/rod
-	.themes
-19
-d/home/rod/.themes
-	NoName
-4
-d/home/rod
-	.ssr
-17
-d/home/rod/Public/Node/Node_Course/Asynchronus
-	..
-0
-d/home/rod/Public/Node/Node_Course
-	Asynchronus
+d/home/rod/Documents/Files/School
+	3° Semester
 2
-d/home/rod/Public/Node
-	Node_Course
-1
-d/home/rod/Public
-	Node
-2
-d/home/rod
-	Pictures
-27
-d/home/rod/Pictures
-	Screenshots
-4
-d/home/rod/Pictures/Screenshots
-	2020-08-31_19-15-15.png
-9
-d/home/rod/Public/Web/CssCourse
-	..
-0
-d/home/rod/Public/Web
-	CssCourse
-1
-d/home/rod/Public
-	Web
-7
-d/home/rod
-	Downloads
-25
-d/home/rod/Downloads
-	C045_Fundamentos de Ingeniería de Software
-1
-d/home/rod
-	Documents
-24
+d/home/rod/Documents/Files
+	School
+3
 d/home/rod/Documents
-	Books
-1
-d/home/rod/Documents/Books
-	Novels
-4
-d/home/rod/Documents/Books/Novels
-	SAO
-3
-d/home/rod/Documents/Books/Novels/SAO
-	Progressive 06.pdf
-6
-d/home/rod/Documents/Books/Novels
-	SAO
-3
-d/home/rod/Documents/Books
-	Novels
-4
-d/home/rod/Documents
-	Books
-1
-d/home/rod
-	Downloads
-25
-d/home/rod/Downloads
-	Inscription
-3
-d/home/rod/Downloads/Inscription
-	Convocatoria_SEP_2020-FEB_2021-Reinscripción_-_v2.pdf
-2
-d/home/rod/Downloads
-	Inscription
+	Files
 3
 d/home/rod
 	Downloads
 25
-d/home
-	..
-0
-d/
-	etc
-3
-d/etc
-	..
-0
-d/
-	bin
-0
-d/bin
-	..
-0
-d/
-	lib
-5
-d/lib
-	..
-0
-d/
-	home
-4
+d/home/rod/Downloads
+	ADA1.pdf
+12
+d/home/rod
+	Downloads
+25
 d/home
 	rod
 1
-d/home/rod
-	.wallpapers
-22
-d/home/rod/.wallpapers
-	..
-0
-d/home/rod
-	.thumbnails
-20
-d/home
-	rod
-1
-d/home/rod
-	.newsboat
-10
-d/home
-	rod
-1
-d/
-	bin
-0
-d/bin
-	betterlockscreen
-32
-d/
-	home
-4
-d/home
-	rod
-1
-d/home/rod
-	.fonts
-4
-d/home/rod/.fonts
-	..
-0
 d/home/rod
 	.config
 3
 d/home/rod/.config
-	htop
-27
-d/home/rod
-	.oh-my-zsh
-12
-d/home/rod/.oh-my-zsh
-	custom
+	polybar
+32
+d/home/rod/.config/polybar
+	system.ini
 4
-d/home/rod/.oh-my-zsh/custom
-	themes
-2
-d/home/rod/.oh-my-zsh/custom/themes
-	hyperzsh.zsh-theme
-2
-d/home/rod/.oh-my-zsh/custom
-	themes
-2
-d/home/rod/.oh-my-zsh
-	custom
-4
+d/home/rod/.config
+	polybar
+32
 d/home/rod
-	.wallpapers
-22
-d/home/rod/.wallpapers
-	.comments
+	Pictures
+32
+d/home/rod/Pictures
+	screenshot.png
+7
+d/home/rod/Downloads/tmcbeans
+	..
+0
+d/home/rod/Downloads
+	tmcbeans
+6
+d/home/rod
+	Public
+32
+d/home/rod/Public
+	Design
+1
+d/home/rod/Public/Design
+	Bento
+1
+d/home/rod/Public/Design/Bento
+	..
+0
+d/home/rod/Public/Design
+	Bento
+1
+d/home/rod/Public
+	Design
+1
+d/home/rod
+	.config
+3
+d/home/rod/.config
+	vifm
+25
+d/home/rod/.config/vifm
+	vifmrc
+5
+d/home/rod/.config
+	vifm
+25
+d/home/rod
+	.config
+3
+d/home
+	rod
+1
+d/home/rod
+	.config
+3
+d/home/rod/.config
+	vifm
+25
+d/home/rod/.config/vifm
+	vifmrc
+5
+d/home/rod/.config
+	vifm
+25
+d/home/rod
+	.config
+3
+d/home
+	rod
+1
+d/home/rod
+	.config
+3
+d/home/rod/.config
+	polybar
+19
+d/home/rod/.config/polybar
+	system.ini
+4
+d/home/rod/.config
+	polybar
+19
+d/home/rod
+	Documents
+30
+d/home/rod/Documents
+	Books
+1
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents
+	Books
+1
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents
+	Books
+1
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents/Books/Novels
+	Philosophy
+2
+d/home/rod/Documents/Books/Novels/Philosophy
+	La Rebelión de Atlas.pdf
+1
+d/home/rod/Documents/Books/Novels
+	Philosophy
+2
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents
+	Books
 1
 d/home/rod
 	Downloads
-25
+31
+d/home/rod/Downloads
+	..
+0
+d/home/rod
+	Public
+7
+d/home/rod/Public
+	Scripts
+7
+d/home/rod/Public/Scripts
+	..
+0
+d/home/rod/Public
+	Sandbox
+6
+d/home/rod/Public/Sandbox
+	tmcbeans
+4
+d/home/rod/Public/Sandbox/tmcbeans
+	bin
+1
+d/home/rod/Public/Sandbox/tmcbeans/bin
+	tmcbeans
+1
+d/home/rod/Public/Sandbox/tmcbeans
+	bin
+1
+d/home/rod/Public/Sandbox
+	tmcbeans
+4
+d/home/rod/Public
+	Sandbox
+6
+d/home/rod
+	Downloads
+4
+d/home/rod/Downloads
+	Rúbrica.pdf
+5
+d/home/rod
+	Downloads
+4
+d/home
+	rod
+1
+d/home/rod
+	Documents
+4
+d/home/rod/Documents
+	Books
+1
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents/Books/Novels
+	Philosophy
+2
+d/home/rod/Documents/Books/Novels/Philosophy
+	La Rebelión de Atlas.pdf
+2
+d/home/rod/Documents/Books/Novels
+	Philosophy
+2
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents
+	Books
+1
+d/home/rod
+	Public
+10
+d/home/rod/Public
+	Sandbox
+6
+d/home/rod/Public/Sandbox
+	tmcbeans
+4
+d/home/rod/Public/Sandbox/tmcbeans
+	bin
+1
+d/home/rod/Public/Sandbox/tmcbeans/bin
+	tmcbeans
+1
+d/home/rod/Public/Sandbox/tmcbeans
+	bin
+1
+d/home/rod/Public/Sandbox
+	tmcbeans
+4
+d/home/rod/Public
+	Sandbox
+6
+d/home/rod
+	Downloads
+5
+d/home/rod/Downloads
+	121210344_272888453887793_8376745378158007957_n.jpg
+2
+d/home/rod
+	Downloads
+14
 d/home/rod/Downloads
 	School
-4
+1
 d/home/rod/Downloads/School
+	Inscription
+2
+d/home/rod/Downloads/School/Inscription
 	..
 0
+d/home/rod/Downloads/School
+	Inscription
+2
+d/home/rod/Downloads/School/Inscription
+	Convocatoria_SEP_2020-FEB_2021-Reinscripción_-_v2.pdf
+2
+d/home/rod/Downloads/School
+	Inscription
+2
 d/home/rod/Downloads
 	School
-4
+1
 d/home/rod
-	Documents
-24
-d/home/rod/Documents
-	Files
-3
-d/home/rod/Documents/Files
+	Downloads
+14
+d/home/rod/Downloads
 	School
-3
-d/home/rod/Documents/Files/School
-	3° Semester
-2
-d/home/rod/Documents/Files/School/3° Semester
-	Teoría de la Computación
-4
-d/home/rod/Documents/Files/School/3° Semester/Teoría de la Computación
-	Ada1-Lectura.pdf
-2
-d/home/rod/Documents/Files/School/3° Semester
-	Teoría de la Computación
-4
-d/home/rod/Documents/Files/School
-	3° Semester
-2
-d/home/rod/Documents/Files
-	School
-3
-d/home/rod/Documents
-	Files
-3
-d/home/rod
-	Pictures
-27
-d/home/rod/Pictures
-	Screenshots
-4
-d/home/rod/Pictures/Screenshots
-	2020-09-23_06-18-23.png
-24
-d/home/rod/Pictures
-	Photos
-2
-d/home/rod
-	Pictures
-27
-d/home/rod/Pictures
-	SW
-3
-d/home/rod/Pictures/SW
-	..
-0
-d/home/rod/Pictures
-	SW
-3
-d/home/rod
-	Pictures
-27
-d/home/rod/Pictures
-	SW
-3
-d/home/rod/Pictures/SW
-	Ph
 1
-d/home/rod/Pictures/SW/Ph
-	Ehmkn8iWkAEFLed.jpg
-2
-d/home/rod/Pictures/SW
-	Ph
-1
-d/home/rod/Pictures/SW/Ph
-	IMG-20190716-WA0009.jpg
-3
-d/home/rod/Pictures/SW
-	Ph
-1
-d/home/rod/Pictures
-	SW
+d/home/rod
+	Downloads
+14
+d/home/rod/Downloads
+	Desktop - 1.png
 3
 d/home/rod
 	Documents
-24
+13
 d/home/rod/Documents
-	Files
-3
-d/home/rod/Documents/Files
-	School
-3
-d/home/rod/Documents/Files/School
-	3° Semester
-2
-d/home/rod/Documents/Files/School/3° Semester
-	Teoría de la Computación
-4
-d/home/rod/Documents/Files/School/3° Semester/Teoría de la Computación
-	ADA1-Antecedentes.pdf
+	Books
 1
+d/home/rod/Documents/Books
+	Novels
+4
+d/home/rod/Documents/Books/Novels
+	Philosophy
+2
+d/home/rod/Documents/Books/Novels/Philosophy
+	La Rebelión de Atlas.pdf
+2
 d
 
 # Right window history (oldest to newest):
@@ -395,8 +395,11 @@ D
 :vsplit
 :cw 
 :remove
-:delete
+:code .
+: code .
+:command code .
 :q
+:delete
 
 # Search history (oldest to newest):
 /vif
@@ -413,6 +416,7 @@ D
 /cldme
 /c
 /better
+/pol
 
 # Prompt history (oldest to newest):
 pWallpaper 1
@@ -426,18 +430,7 @@ pUndertale Wallpapers
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-xlrm5z.png
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-yj7j6k.jpg
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-yjm927.jpg
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-yjpmyk.jpg
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-ymwj9d.jpg
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-zm5pxv.jpg
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-zm9dky.png
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-zmd22w.png
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-zmjklg.jpg
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-zmwv9y.png
-""/home/rod/.local/share/vifm/Trash/000_wallhaven-zxr38v.png
-""/home/rod/.local/share/vifm/Trash/000_wp1.jpg
+""/home/rod/.local/share/vifm/Trash/000_Comprobante de Pago.pdf
 
 # Directory stack (oldest to newest):
 
@@ -792,6 +785,8 @@ t/home/rod/.local/share/vifm/Trash/000_wallhaven-zxr38v.png
 	/home/rod/.wallpapers/wallhaven-zxr38v.png
 t/home/rod/.local/share/vifm/Trash/000_wp1.jpg
 	/home/rod/.wallpapers/wp1.jpg
+t/home/rod/.local/share/vifm/Trash/000_Comprobante de Pago.pdf
+	/home/rod/Downloads/Comprobante de Pago.pdf
 
 # State:
 f
