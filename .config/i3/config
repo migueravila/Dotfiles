@@ -11,8 +11,9 @@
 
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id picom -b
-exec_always --no-startup-id autotiling
-exec_always ~/.config/polybar/launch.sh
+exec_always --no-startup-id i3-auto-layout
+exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id mpd
 
 #########################################################################
 ## System Basics
@@ -63,63 +64,65 @@ bindsym $mod+Shift+Return exec $sterm
 
 #Escape
 
-# space (Quick actions)
-bindsym $mod+space exec --no-startup-id dmenu_run -p '' 
-bindsym $mod+Shift+space "mark --add _; [con_mark=f] floating disable, border none, mark --add --toggle _; [con_mark=_] floating enable, border pixel 0; mark --add --toggle f;"
-
 #q (Quit)
 bindsym $mod+q kill
 bindsym $mod+Shift+q exec dsys
 
-# w
+# w (Time)
 bindsym $mod+w exec $term -e 'calcurse'
 bindsym $mod+Shift+w exec $term -e 'dijo'
 
-# l
-bindsym $mod+l exec betterlockscreen -l
-bindsym $mod+Shift+l restart
+# space (Run and Floating mode)
+bindsym $mod+space exec --no-startup-id dmenu_run -p '' 
+bindsym $mod+Shift+space "mark --add _; [con_mark=f] floating disable, border none, mark --add --toggle _; [con_mark=_] floating enable, border pixel 0; mark --add --toggle f;"
 
 # y (Screenshots)
 bindsym $mod+y exec flameshot full -p ~/Pictures/Screenshots
 bindsym $mod+Shift+y exec flameshot gui -d 700
 
-# a (Layout)
-bindsym $mod+a gaps inner all set 15; gaps outer all set 15; gaps top all set 30; exec notify-send '💫 Show mode'
+# a (Dmenu utilities 1)
+bindsym $mod+a exec =
+bindsym $mod+Shift+a exec dtodo
 
-# s (Dmenu utilities 1)
-bindsym $mod+s exec =
-bindsym $mod+Shift+s exec dtodo
+# s (Dmenu utilities 2)
+bindsym $mod+s exec dsearch
+bindsym $mod+Shift+s exec search
 
-# d (Dmenu utilities 2)
+# d (Dmenu utilities 3)
 bindsym $mod+d exec bmkm
-bindsym $mod+Shift+d exec search
+bindsym $mod+Shift+d exec demoji
 
 # f (Dmenu utilities 3)
 bindsym $mod+f exec bmkf
-bindsym $mod+Shift+f exec demoji
+bindsym $mod+Shift+f exec brmkm
 
 # g (Toggle gaps)
-bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0; border pixel 0
 bindsym $mod+g gaps inner all set 10; gaps outer all set -2; gaps top all set 20;
+bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0; border pixel 0
+
+# h (Layout)
+bindsym $mod+h gaps inner all set 15; gaps outer all set 15; gaps top all set 25; gaps right all set 100; gaps left all set 100; exec notify-send '💫 Show mode'
+bindsym $mod+Shift+h exec polybar-msg cmd toggle; gaps top all set 0;
+
+# l
+bindsym $mod+l exec betterlockscreen -l
+bindsym $mod+Shift+l restart
 
 # z (Browsers)
 bindsym $mod+z exec firefox
-bindsym $mod+Shift+z exec brave
+bindsym $mod+Shift+z exec vivaldi-stable
 
 # x (File managers)
 bindsym $mod+x exec $term -e ~/.config/vifm/scripts/vifmrun
 bindsym $mod+Shift+x exec pcmanfm
 
-# c (Picom)
-bindsym $mod+c exec --no-startup-id picom -b
-bindsym $mod+Shift+c exec --no-startup-id killall picom 
-
-# v (development)
-bindsym $mod+v exec --no-startup-id code
-bindsym $mod+Shift+v exec $sterm -e ~/.scripts/marktext-x86_64.AppImage & 
+# c (Productivity)
+bindsym $mod+c exec --no-startup-id code 
+bindsym $mod+Shift+c exec mousepad 
 
 # m (fullscreen) 
 bindsym $mod+m fullscreen toggle; exec polybar-msg cmd toggle;
+bindsym $mod+Shift+m exec polybar-msg cmd toggle; gaps top all set 0;
 
 # Arrow Keys 
 bindsym $mod+Left		      focus left
