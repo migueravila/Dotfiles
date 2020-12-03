@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Dotfiles</h1>
-<b>🌱 Ghibli inspired dotfiles</b>
+<b>🌱 Personal Dotfiles Repo</b>
 </div>
 
 <p align="center">
