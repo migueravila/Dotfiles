@@ -1,6 +1,12 @@
+#  ___               _   
+# |   \ _  _ _ _  __| |_ 
+# | |) | || | ' \(_-<  _|
+# |___/ \_,_|_||_/__/\__|
+# - Miguel R. Ávila
+
 [global]
     frame_width = 0
-    frame_color = "#0F0F0F"
+    frame_color = "#1C1B1D"
     
     font = Proxima Nova 10
     
@@ -183,15 +189,15 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#1C1B1D"
-    foreground = "#D8DEE9"
+    foreground = "#D8D8D8"
     timeout = 10
 
 [urgency_normal]
     background = "#1C1B1D"
-    foreground = "#D8DEE9"
+    foreground = "#D8D8D8"
     timeout = 10
 
 [urgency_critical]
     background = "#1C1B1D"
-    foreground = "#D8DEE9"
+    foreground = "#D8D8D8"
     timeout = 0
