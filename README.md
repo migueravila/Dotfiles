@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
-  <img src="https://github.com/MiguelRAvila/ZenDmenu/blob/master/rsc/ss.png">
+  <img src="https://github.com/MiguelRAvila/Dotfiles/blob/master/assets/head.png">
 </p>
 
 ### In this repo you can find:
