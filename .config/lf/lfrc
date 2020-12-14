@@ -1,0 +1,50 @@
+######################
+# Basic Customization
+######################
+
+set icons true
+set preview true
+
+#####################
+# Functions
+#####################
+
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+cmd dragon %dragon-drag-and-drop -a -x $fx
+
+##################
+# Keybindings
+##################
+
+#Deleting Keybindgins
+map d
+
+#Basic functions
+map <enter> open
+map <backspace2> delete
+map . set hidden!
+map ga dragon
+
+map mf mkfile
+map md mkdir
+
+map r rename
+
+#Quick Movement
+map gc cd ~/.config
+map gw cd ~/.wallpapers
+map gp cd ~/Pictures
+map gs cd ~/Pictures/Screenshots
+map gr cd ~/Workspace
+
