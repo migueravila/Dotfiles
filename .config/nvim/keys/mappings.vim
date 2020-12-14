@@ -1,3 +1,10 @@
+"  _  _             _       
+" | \| |___ _____ _(_)_ __  
+" | .` / -_) _ \ V / | '  \ 
+" |_|\_\___\___/\_/|_|_|_|_|
+"                           
+" - Miguel R. Ávila
+
 " Better Navigation
 nnoremap w k
 nnoremap s j
