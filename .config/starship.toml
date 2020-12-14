@@ -1,0 +1,37 @@
+add_newline = false
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_status\
+$docker_context\
+$package\
+$cmake\
+$golang\
+$java\
+$nix_shell\
+$line_break\
+$battery\
+$time\
+$status\
+$character"""
+
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red) "
+
+[line_break]
+disabled = true
+
+[git_branch]
+format = "on [$symbol$branch](green) "
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]](yellow) )'
+
+[package]
+format = "via [📦 $version](yellow bold) "
