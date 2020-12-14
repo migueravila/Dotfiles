@@ -1,53 +1,85 @@
-# vim: filetype=conf
+#  _  _                             
+# | \| |__ _ __  _ __  __ _ __ _ __ 
+# | .` / _| '  \| '_ \/ _| '_ \ '_ \
+# |_|\_\__|_|_|_| .__/\__| .__/ .__/
+#               |_|      |_|  |_|   
+# - Miguel R. Ávila
+
+# Basic Configuration
 
 ncmpcpp_directory = "~/.config/ncmpcpp"
 mpd_music_dir = "~/Music"
 message_delay_time = "1"
 visualizer_type = "spectrum"
 
-autocenter_mode = yes
 
+#song_list_format = {$4%a » }{%t}|{$8%f$9}$R{$3(%l)$9}
+song_list_format = "{%a - %t} $R {%l}
+now_playing_prefix = "$b$(147)»»»  "
+now_playing_suffix = "$/b$(white)"
 
-song_list_format = {$4%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
-song_status_format = $b{{$3"%t"}} $8by {$5%a}
-song_library_format = {%n - }{%t}|{%f}
-
-alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
-alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
-song_columns_list_format = (7f)[green]{l} (50)[green]{t|f:Title}
-
-current_item_prefix = $(blue)$r$b
-current_item_suffix = $/r$(end)$/b
-current_item_inactive_column_prefix = $(red)$r
-current_item_inactive_column_suffix = $/r$(end)
 playlist_display_mode = columns
-browser_display_mode = columns
-progressbar_look = -|-
 
-browser_sort_format = {%t}|{(%l)}
-
-media_library_primary_tag = artist
-
-media_library_albums_split_by_date = no
-
-startup_screen = "browser"
-
-display_volume_level = no
-header_visibility = no
-titles_visibility = no
-
-ignore_leading_the = yes
-
-external_editor = nvim
-use_console_editor = yes
-empty_tag_color = red
-main_window_color = white
+#### Progressbar
+progressbar_look = "▬▬"
 progressbar_color = black:b
 progressbar_elapsed_color = green:b
 
-statusbar_color = white
+song_columns_list_format = "(10)[]{f}"
 
-statusbar_time_color = yellow:b
+#### Colors
+alternative_ui_separator_color = blue
+volume_color = "black"
+statusbar_color = "black"
+header_window_color = "black"
+main_window_color = "147"
+empty_tag_color = "125"
+color2 = "4"
 
-execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%album%' current)"
+#### General formatting
+titles_visibility = "no"
+header_visibility = "no"
+statusbar_visibility = "no"
+playlist_show_remaining_time = no
+#volume_color = "black:b"
+alternative_header_first_line_format = $3$b| {%f} |$/b
+alternative_header_second_line_format = $5{%b}|{/%D/}
+user_interface = alternative
+current_item_prefix = $(green)$r$b
+current_item_suffix = $/r$(end)$/b
+
+
+song_status_format = $b{{$3"%t"}} $8by {$5%a}
+song_library_format = {%n - }{%t}|{%f}
+
+current_item_inactive_column_prefix = $(red)$r
+current_item_inactive_column_suffix = $/r$(end)
+browser_display_mode = columns
+
+browser_sort_format = {%t}|{(%l)}
+media_library_primary_tag = artist
+media_library_albums_split_by_date = no
+startup_screen = "browser"
+display_volume_level = yes
+ignore_leading_the = yes
+
+#### Misc stuff
+discard_colors_if_item_is_selected = "yes"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+mouse_support = "yes"
+colors_enabled = "yes"
+mpd_crossfade_time = "0"
+follow_now_playing_lyrics = "yes"
+store_lyrics_in_song_dir = "yes"
+song_window_title_format = ncmpcpp
+ask_before_clearing_playlists = "no"
+volume_change_step = "5"
+external_editor = nvim
+use_console_editor = yes
+#empty_tag_color = red
+
+#statusbar_color = white
+statusbar_time_color = black:b
+execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%file% \n%album%' current)"
 

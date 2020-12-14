@@ -1,9 +1,9 @@
-#  ____        _    __ _ _           
-# |  _ \  ___ | |_ / _(_) | ___  ___ 
-# | | | |/ _ \| __| |_| | |/ _ \/ __|
-# | |_| | (_) | |_|  _| | |  __/\__ \
-# |____/ \___/ \__|_| |_|_|\___||___/
-
+#  _ ____              __ _      
+# (_)__ / __ ___ _ _  / _(_)__ _ 
+# | ||_ \/ _/ _ \ ' \|  _| / _` |
+# |_|___/\__\___/_||_|_| |_\__, |
+#                          |___/ 
+# - Miguel R. Ávila
                                                        
 #########################################################################
 ## Autostart Applications
@@ -12,7 +12,7 @@
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id picom -b
 exec_always --no-startup-id i3-auto-layout
-exec --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id mpd
 
 #########################################################################
@@ -23,15 +23,15 @@ smart_borders on
 set $inner_gaps 10
 set $outer_gaps -2
 set $top_gaps 20
-set $term --no-startup-id st
-set $sterm --no-startup-id alacritty
+set $term --no-startup-id alacritty
+set $sterm --no-startup-id st
 set $mod Mod4
 set $alt Mod1
 
 font xft:Proxima Nova 10
 
 #########################################################################
-## i3Gaps
+## Gaps
 #########################################################################
 
 for_window [class="^.*"] border pixel 0
@@ -41,7 +41,7 @@ gaps top $top_gaps
 hide_edge_borders both
 
 #########################################################################
-## Specifications for Windows
+## Specifications for windows
 #########################################################################
 
 floating_modifier $mod
@@ -55,46 +55,40 @@ for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 
 #########################################################################
-## Shortcuts
+## Keybindings
 #########################################################################
 
 # Return
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return exec $sterm
 
-#Escape
-
-#q (Quit)
-bindsym $mod+q kill
-bindsym $mod+Shift+q exec dsys
-
-# w (Time)
-bindsym $mod+w exec $term -e 'calcurse'
-bindsym $mod+Shift+w exec $term -e 'dijo'
-
-# space (Run and Floating mode)
+# space (Dmenu and Floating mode)
 bindsym $mod+space exec --no-startup-id dmenu_run -p '' 
 bindsym $mod+Shift+space "mark --add _; [con_mark=f] floating disable, border none, mark --add --toggle _; [con_mark=_] floating enable, border pixel 0; mark --add --toggle f;"
+
+#q (Kill and Exit)
+bindsym $mod+q kill
+bindsym $mod+Shift+q exec dsys; 
 
 # y (Screenshots)
 bindsym $mod+y exec flameshot full -p ~/Pictures/Screenshots
 bindsym $mod+Shift+y exec flameshot gui -d 700
 
-# a (Dmenu utilities 1)
-bindsym $mod+a exec =
-bindsym $mod+Shift+a exec dtodo
+# a (Browsers)
+bindsym $mod+a exec firefox
+bindsym $mod+Shift+a exec vivaldi-stable
 
-# s (Dmenu utilities 2)
-bindsym $mod+s exec dsearch
-bindsym $mod+Shift+s exec search
+# s (File Managers)
+bindsym $mod+s exec $term -e lf
+bindsym $mod+Shift+s exec pcmanfm
 
-# d (Dmenu utilities 3)
-bindsym $mod+d exec bmkm
-bindsym $mod+Shift+d exec demoji
+# d (Code)
+bindsym $mod+d exec code
+bindsym $mod+Shift+d exec bmrp
 
-# f (Dmenu utilities 3)
-bindsym $mod+f exec bmkf
-bindsym $mod+Shift+f exec brmkm
+# f (Picom)
+bindsym $mod+f exec killall picom; exec notify-send '☠️ Compositor Killed'
+bindsym $mod+Shift+f exec picom -b; exec notify-send '🤖 Compositor Running'
 
 # g (Toggle gaps)
 bindsym $mod+g gaps inner all set 10; gaps outer all set -2; gaps top all set 20;
@@ -104,21 +98,25 @@ bindsym $mod+Shift+g gaps inner all set 0; gaps outer all set 0; border pixel 0
 bindsym $mod+h gaps inner all set 15; gaps outer all set 15; gaps top all set 25; gaps right all set 100; gaps left all set 100; exec notify-send '💫 Show mode'
 bindsym $mod+Shift+h exec polybar-msg cmd toggle; gaps top all set 0;
 
-# l
+# l (Lock)
 bindsym $mod+l exec betterlockscreen -l
 bindsym $mod+Shift+l restart
 
-# z (Browsers)
-bindsym $mod+z exec firefox
-bindsym $mod+Shift+z exec vivaldi-stable
+# z (Dmenu Utilities 1)
+bindsym $mod+z exec bmwb
+bindsym $mod+Shift+z exec search
 
-# x (File managers)
-bindsym $mod+x exec $term -e ~/.config/vifm/scripts/vifmrun
-bindsym $mod+Shift+x exec pcmanfm
+# x (Dmenu Utilities 2)
+bindsym $mod+x exec cbmkm
+bindsym $mod+Shift+x exec bmkm
 
-# c (Productivity)
-bindsym $mod+c exec --no-startup-id code 
-bindsym $mod+Shift+c exec mousepad 
+# c (Dmenu Utilities 3)
+bindsym $mod+c exec bmkf
+bindsym $mod+Shift+c exec bmkm
+
+# v (Dmenu Utilities 4)
+bindsym $mod+v exec =
+bindsym $mod+Shift+v exec demoji
 
 # m (fullscreen) 
 bindsym $mod+m fullscreen toggle; exec polybar-msg cmd toggle;
@@ -148,12 +146,12 @@ bindsym $mod+Ctrl+Right		move right
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4 "4:"
-set $ws5 "5:"
-set $ws6 "6:"
+set $ws1 "一"
+set $ws2 "二" 
+set $ws3 "三" 
+set $ws4 "四"
+set $ws5 "五" 
+set $ws6 "六"
 
 # switch to workspace
 bindsym $mod+1		workspace $ws1
@@ -161,7 +159,7 @@ bindsym $mod+2		workspace $ws2
 bindsym $mod+3		workspace $ws3
 bindsym $mod+4		workspace $ws4
 bindsym $mod+5		workspace $ws5
-bindsym $mod+6		workspace $ws6
+bindsym $mod+6    workspace $ws6
 
 # move focused container to workspace
 bindsym $mod+Shift+1	move container to workspace $ws1; workspace $ws1 
@@ -169,7 +167,7 @@ bindsym $mod+Shift+2	move container to workspace $ws2; workspace $ws2
 bindsym $mod+Shift+3	move container to workspace $ws3; workspace $ws3 
 bindsym $mod+Shift+4	move container to workspace $ws4; workspace $ws4 
 bindsym $mod+Shift+5	move container to workspace $ws5; workspace $ws5 
-bindsym $mod+Shift+6	move container to workspace $ws6; workspace $ws6 
+bindsym $mod+Shift+6  move container to workspace $ws6; workspace $ws6
 
 
 # Pulse Audio controls
