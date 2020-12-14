@@ -1,0 +1,58 @@
+#!/bin/bash
+# Based on https://gitlab.com/dwt1/dotfiles/-/tree/master/.dmenu
+# Dmenu script for quick bookmarked directories
+
+# Here you can declare the options of your files
+declare options=("Workspace
+Screenshots
+Downloads
+Images
+Documents
+Videos
+Config
+School
+Firefox
+Quit")
+
+# Call Dmenu
+choice=$(echo -e "${options[@]}" | dmenu -i -p 'Folders Bookmarks: ')
+
+# The choices and the path of each file
+case "$choice" in
+	Quit)
+		echo "Program terminated." && exit 1
+	;;
+	Workspace)
+		choice="$HOME/Workspace"
+	;;
+	Screenshots)
+		choice="$HOME/Pictures/Screenshots"
+	;;
+	Images)
+		choice="$HOME/Pictures"
+	;;
+	Documents)
+		choice="$HOME/Documents"
+	;;
+	Downloads)
+		choice="$HOME/Downloads"
+	;;
+	Videos)
+		choice="$HOME/Videos"
+	;;
+	Config)
+		choice="$HOME/.config"
+	;;
+	School)
+		choice="$HOME/Documents/Files/School"
+	;;
+	Firefox)
+		choice="$HOME/.mozilla/firefox/mbckotg9.default-release/chrome"
+	;;
+	*)
+		exit 1
+	;;
+esac
+#Call terminal emulator and open the file
+alacritty -e lf $choice &
+

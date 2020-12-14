@@ -1,0 +1,13 @@
+#!/bin/sh
+# Based on https://github.com/LukeSmithxyz/voidrice
+# Dmenu Script wrapper script for system functions.
+
+cmds="\
+Close		
+Lock		betterlockscreen -l
+Reboot	        reboot
+Shutdown	shutdown -h now"
+
+choice="$(echo "$cmds" | cut -d'	' -f 1 | dmenu -p 'What do you want to do?')" || exit 1
+
+`echo "$cmds" | grep "^$choice	" | cut -d '	' -f2-`
