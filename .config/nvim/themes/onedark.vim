@@ -1,3 +1,10 @@
+"  _  _             _       
+" | \| |___ _____ _(_)_ __  
+" | .` / -_) _ \ V / | '  \ 
+" |_|\_\___\___/\_/|_|_|_|_|
+"                           
+" - Miguel R. Ávila
+
 " onedark.vim override: Don't set a background color when running in a terminal;
 if (has("autocmd") && !has("gui_running"))
   augroup colorset

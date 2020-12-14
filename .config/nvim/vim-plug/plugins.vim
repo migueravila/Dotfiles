@@ -1,3 +1,10 @@
+"  _  _             _       
+" | \| |___ _____ _(_)_ __  
+" | .` / -_) _ \ V / | '  \ 
+" |_|\_\___\___/\_/|_|_|_|_|
+"                           
+" - Miguel R. Ávila
+
 " auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
