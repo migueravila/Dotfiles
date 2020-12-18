@@ -8,7 +8,7 @@
 ### In this repo you can find:
 
 - Config files for **i3** and **i3blocks**
-- Zathura, ncmpcpp and Vifm config files
+- Zathura, ncmpcpp and Lf config files
 - **Polybar** config file
 - **Neovim** configuration files
 - The config files for the **Alacritty** Terminal
