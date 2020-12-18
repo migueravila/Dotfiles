@@ -3,7 +3,7 @@
 <b>🌱 Personal Dotfiles Repo</b>
 </div>
 
-![](assets/head.png)
+![](assets/Head.png)
 
 ### In this repo you can find:
 
