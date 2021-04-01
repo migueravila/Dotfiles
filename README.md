@@ -3,12 +3,14 @@
 <b>🌱 Personal Dotfiles Repo</b>
 </div>
 
+<br>
+
 ![](assets/head.png)
 
 ### In this repo you can find:
 
-- Config files for **i3** and **i3blocks**
-- Zathura, ncmpcpp and Lf config files
+- Config files for **i3**
+- Dunst, Ncmpcpp and Lf config files
 - **Polybar** config file
 - **Neovim** configuration files
 - The config files for the **Alacritty** Terminal
@@ -20,4 +22,3 @@
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build the st terminal **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
 
-![](assets/Screenshots.png)
