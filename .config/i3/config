@@ -1,34 +1,34 @@
-#  _ ____              __ _      
-# (_)__ / __ ___ _ _  / _(_)__ _ 
-# | ||_ \/ _/ _ \ ' \|  _| / _` |
-# |_|___/\__\___/_||_|_| |_\__, |
-#                          |___/ 
+# ┬  ╦╦╦  ┌─┐┌─┐┌┐┌┌─┐┬┌─┐
+# │  ║║║  │  │ ││││├┤ ││ ┬
+# ┴  ╩╩╩  └─┘└─┘┘└┘└  ┴└─┘
 # - Miguel R. Ávila
                                                        
 #########################################################################
 ## Autostart Applications
 #########################################################################
 
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1;
+exec --no-startup-id xfce4-power-manager
 exec --no-startup-id picom -b
-exec_always --no-startup-id i3-auto-layout
+exec_always --no-startup-id ff-theme-util
+exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec --no-startup-id mpd
 
 #########################################################################
-## System Basics
+## System
 #########################################################################
 
 smart_borders on
 set $inner_gaps 10
 set $outer_gaps -2
-set $top_gaps 20
+set $top_gaps 2
 set $term --no-startup-id alacritty
 set $sterm --no-startup-id st
 set $mod Mod4
 set $alt Mod1
 
-font xft:Proxima Nova 10
+font xft:Inter 10
 
 #########################################################################
 ## Gaps
@@ -47,12 +47,14 @@ hide_edge_borders both
 floating_modifier $mod
 for_window [title="File Transfer*"] floating enable
 for_window [title="i3_help"] floating enable sticky enable border normal
+for_window [class="st"] floating enable
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable enable border normal
 for_window [class="Nitrogen"] floating enable enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
+
 
 #########################################################################
 ## Keybindings
@@ -63,28 +65,28 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return exec $sterm
 
 # space (Dmenu and Floating mode)
-bindsym $mod+space exec --no-startup-id dmenu_run -p '' 
+bindsym $mod+space exec --no-startup-id ~/.config/polybar/scripts/launcher.sh --elight
 bindsym $mod+Shift+space "mark --add _; [con_mark=f] floating disable, border none, mark --add --toggle _; [con_mark=_] floating enable, border pixel 0; mark --add --toggle f;"
 
 #q (Kill and Exit)
 bindsym $mod+q kill
-bindsym $mod+Shift+q exec dsys; 
+bindsym $mod+Shift+q exec --no-startup-id ~/.config/polybar/scripts/powermenu.sh --elight
 
 # y (Screenshots)
 bindsym $mod+y exec flameshot full -p ~/Pictures/Screenshots
 bindsym $mod+Shift+y exec flameshot gui -d 700
 
 # a (Browsers)
-bindsym $mod+a exec firefox
-bindsym $mod+Shift+a exec vivaldi-stable
+bindsym $mod+a exec brave
+bindsym $mod+Shift+a exec firefox
 
 # s (File Managers)
-bindsym $mod+s exec $term -e lf
-bindsym $mod+Shift+s exec pcmanfm
+bindsym $mod+s exec $term -e nnn
+bindsym $mod+Shift+s exec thunar
 
 # d (Code)
 bindsym $mod+d exec code
-bindsym $mod+Shift+d exec bmrp
+bindsym $mod+Shift+d exec $term -e nvim
 
 # f (Picom)
 bindsym $mod+f exec killall picom; exec notify-send '☠️ Compositor Killed'
@@ -99,7 +101,7 @@ bindsym $mod+h gaps inner all set 15; gaps outer all set 15; gaps top all set 25
 bindsym $mod+Shift+h exec polybar-msg cmd toggle; gaps top all set 0;
 
 # l (Lock)
-bindsym $mod+l exec betterlockscreen -l
+bindsym $mod+l exec slock -l
 bindsym $mod+Shift+l restart
 
 # z (Dmenu Utilities 1)
@@ -179,16 +181,3 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioPause exec mpc stop
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev
-
-#########################################################################
-## i3 Config
-#########################################################################
-
-# Theme colors
-# class                   border  backgr. text    indic.   child_border
-  client.focused          #88c0d0 #88c0d0 #D8DEE9 #88c0d0
-  client.focused_inactive #2F3D44 #a3be8c #D8DEE9 #a3be8c
-  client.unfocused        #1F2229 #1F2229 #D8DEE9 #454948
-  client.urgent           #bf616a #bf616a #D8DEE9 #a3be8c
-  client.placeholder      #1F2229 #1F2229 #D8DEE9 #1F2229 
-  client.background       #1F2229
