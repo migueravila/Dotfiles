@@ -3,7 +3,7 @@
 <b>🌱 Personal Dotfiles Repo</b>
 </div>
 
-![](assets/Head.png)
+![](assets/head.png)
 
 ### In this repo you can find:
 
@@ -16,7 +16,6 @@
 ### Other projects I use with my dotfiles:
 
 - The build of **Dmenu**: [⚡ CleanDmenu](https://github.com/MiguelRAvila/CleanDmenu)
-- VSCode theme: [🌻 Minone](https://github.com/MiguelRAvila/Minone)
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build the st terminal **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
