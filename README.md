@@ -1,16 +1,15 @@
+![image](assets/head.png)
+
 <div align="center">
-<h1>Dotfiles</h1>
-<b>🌱 Personal Dotfiles Repo</b>
+    <b>🌱 Personal Dotfiles Repo</b>
 </div>
 
 <br>
 
-![](assets/head.png)
-
 ### In this repo you can find:
 
-- Config files for **i3**
-- Dunst, Ncmpcpp and Lf config files
+- Config files for **bspwm**
+- Dunst, Ncmpcpp and lf config files
 - **Polybar** config file
 - **Neovim** configuration files
 - The config files for the **Alacritty** Terminal
@@ -21,4 +20,3 @@
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build the st terminal **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
-
