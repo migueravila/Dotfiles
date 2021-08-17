@@ -6,7 +6,12 @@
 
 <br>
 
-### In this repo you can find:
+## 👇 Index
+- [👇 Index](#-index)
+- [🎨 Config files:](#-config-files)
+- [🚀 Projects used:](#-projects-used)
+
+## 🎨 Config files:
 
 - Config files for **bspwm**
 - Dunst, Ncmpcpp and lf config files
@@ -14,7 +19,7 @@
 - **Neovim** configuration files
 - The config files for the **Alacritty** Terminal
 
-### Other projects I use with my dotfiles:
+## 🚀 Projects used:
 
 - The build of **Dmenu**: [⚡ CleanDmenu](https://github.com/MiguelRAvila/CleanDmenu)
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
