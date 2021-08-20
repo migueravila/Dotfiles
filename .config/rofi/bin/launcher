@@ -1,5 +1,5 @@
 #!/bin/sh
 
-DIR="$HOME/.config/bspwm"
+DIR="$HOME/.config"
 
 rofi -no-lazy-grab -show drun -theme $DIR/rofi/themes/launcher.rasi

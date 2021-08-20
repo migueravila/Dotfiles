@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$HOME/.config/bspwm"
+DIR="$HOME/.config"
 
 rofi_command="rofi -theme $DIR/rofi/themes/powermenu.rasi"
 
