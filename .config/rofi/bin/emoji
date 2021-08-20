@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DIR="$HOME/.config/bspwm"
+
+rofi -show emoji -modi emoji -theme $DIR/rofi/themes/emojis.rasi

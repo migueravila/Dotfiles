@@ -1,0 +1,111 @@
+#!/bin/bash
+
+# ┌┐ ┌─┐┌─┐┬ ┬┌┬┐
+# ├┴┐└─┐├─┘││││││
+# └─┘└─┘┴  └┴┘┴ ┴
+#
+# Miguel Avila
+
+## Environtment
+export PATH="${PATH}:$HOME/.config/bspwm/bin"
+
+## Get colors from .Xresources -------------------------------#
+xrdb ~/.Xresources
+getcolors () {
+	FOREGROUND=$(xrdb -query | grep 'foreground:'| awk '{print $NF}')
+	BACKGROUND=$(xrdb -query | grep 'background:'| awk '{print $NF}')
+	BLACK=$(xrdb -query | grep 'color0:'| awk '{print $NF}')
+	RED=$(xrdb -query | grep 'color1:'| awk '{print $NF}')
+	GREEN=$(xrdb -query | grep 'color2:'| awk '{print $NF}')
+	YELLOW=$(xrdb -query | grep 'color3:'| awk '{print $NF}')
+	BLUE=$(xrdb -query | grep 'color4:'| awk '{print $NF}')
+	MAGENTA=$(xrdb -query | grep 'color5:'| awk '{print $NF}')
+	CYAN=$(xrdb -query | grep 'color6:'| awk '{print $NF}')
+	WHITE=$(xrdb -query | grep 'color7:'| awk '{print $NF}')
+}
+getcolors
+
+## Configurations -------------------------------#
+
+xrandr --output HDMI1 --primary --mode 1920x1080 --rotate normal --output VGA1 --mode 1920x1080 --rotate normal --left-of HDMI1
+
+bspc monitor HDMI1 -d 1 2 3
+bspc monitor VGA1 -d 4 5 6
+
+bspc config border_width 0
+bspc config window_gap 10
+bspc config split_ratio 0.50
+bspc config top_padding 7
+
+bspc config focused_border_color "$BLUE" 
+bspc config normal_border_color "$BACKGROUND"
+bspc config active_border_color "$MAGENTA"
+bspc config presel_feedback_color "$GREEN"
+
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+bspc config paddingless_monocle true
+bspc config single_monocle false
+bspc config focus_follows_pointer true
+
+
+## Window rules -------------------------------#
+
+# remove all rules first
+bspc rule -r *:*
+
+# special rules
+bspc rule -a alacritty-float state=floating follow=on focus=on
+bspc rule -a Pcmanfm state=floating follow=on focus=on
+bspc rule -a Onboard state=floating follow=on focus=on
+bspc rule -a Audacious state=floating follow=on focus=on
+bspc rule -a Firefox:Places state=floating follow=on focus=on
+bspc rule -a Viewnior state=floating follow=on focus=on
+bspc rule -a Nm-connection-editor state=floating follow=on focus=on
+bspc rule -a Conky state=floating manage=off
+bspc rule -a stalonetray state=floating manage=off
+
+## Autostart -------------------------------#
+
+# Kill if already running
+killall -9 sxhkd xsettingsd dunst xfce4-power-manager
+
+# Lauch notification daemon
+dunst \
+-geom "280x50-10+38" -frame_width "1" -font "Iosevka Custom 9" \
+-lb "$BACKGROUND" -lf "$FOREGROUND" -lfr "$BLUE" \
+-nb "$BACKGROUND" -nf "$FOREGROUND" -nfr "$BLUE" \
+-cb "$BACKGROUND" -cf "$RED" -cfr "$RED" &
+
+# Lauch xsettingsd daemon
+xsettingsd &
+
+# polkit agent
+/usr/lib/xfce-polkit/xfce-polkit &
+
+# Lauch keybindings daemon
+sxhkd &
+
+# Enable Super Keys For Menu
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
+
+# Enable power management
+xfce4-power-manager &
+
+# Fix cursor
+xsetroot -cursor_name left_ptr
+
+# Restore wallpaper
+bash $HOME/.fehbg
+
+# Start mpd
+exec mpd &
+
+# Start bspwm scripts
+bspcomp
+bspbar
+bspfloat &
+
+## Adjust backlight (AMD)
+#blight -d amdgpu_bl0 set 15%
