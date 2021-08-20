@@ -1,7 +1,7 @@
 ![image](assets/head.png)
 
 <div align="center">
-    <b>🌱 Personal Dotfiles Repo</b>
+    <b>🌷 Personal dotfiles.</b>
 </div>
 
 <br>

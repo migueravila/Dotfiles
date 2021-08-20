@@ -1,0 +1,15 @@
+# Fonts 
+font:
+  normal:
+    family: "Jetbrains mono"
+    
+  bold:
+    family: "Jetbrains mono"
+    
+  italic:
+    family: "Jetbrains mono"
+    
+  bold_italic:
+    family: "Jetbrains mono"
+  
+  size: 10

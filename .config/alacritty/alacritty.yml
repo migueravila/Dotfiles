@@ -1,0 +1,43 @@
+# ┌─┐┬  ┌─┐┌─┐┬─┐┬┌┬┐┌┬┐┬ ┬
+# ├─┤│  ├─┤│  ├┬┘│ │  │ └┬┘
+# ┴ ┴┴─┘┴ ┴└─┘┴└─┴ ┴  ┴  ┴ 
+#
+# Miguel Avila
+
+# Import colors and fonts
+import:
+  - ~/.config/bspwm/alacritty/colors.yml
+  - ~/.config/bspwm/alacritty/fonts.yml
+
+env:
+  TERM: alacritty
+
+# Window
+window:
+  dimensions:
+    columns: 82
+    lines: 25
+
+  padding:
+    x: 20
+    y: 20
+
+  decorations: full
+  startup_mode: Windowed
+  dynamic_title: true
+
+  history: 1000
+  multiplier: 3
+
+background_opacity: 1
+
+# Cursor
+cursor:
+  style:
+    shape: Beam
+    blinking: On
+
+  unfocused_hollow: false
+
+## Live reload
+live_config_reload: true
