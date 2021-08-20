@@ -11,12 +11,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " Coc for intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " Theme!
-    Plug 'sainnhe/sonokai'
-    " Bar
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    " Rosé Pine theme
+    Plug 'rose-pine/neovim'
+    " Statusbar
+    Plug 'hoob3rt/lualine.nvim'
+    " Icons for lualine
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()

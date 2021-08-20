@@ -1,0 +1,282 @@
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+;; M O D U L E S
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/network]
+type = internal/network
+interface = wlan0
+interval = 1.0
+
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <ramp-signal>  <label-connected>
+
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = "睊  "
+format-disconnected-prefix-font = 2
+format-disconnected-prefix-foreground = ${color.RED}
+
+label-connected = "Connected"
+label-disconnected = "Disconnected"
+
+ramp-signal-0 = 直
+ramp-signal-1 = 直
+ramp-signal-2 = 直
+ramp-signal-3 = 直
+ramp-signal-4 = 直
+ramp-signal-font = 2
+ramp-signal-foreground = ${color.CYAN}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/date]
+type = internal/date
+
+interval = 1.0
+
+time = %A, %d %B  %I:%M %p 
+time-alt = %I:%M %p 
+
+format = <label>
+format-prefix = " "
+format-prefix-font = 2
+format-prefix-foreground = ${color.RED}
+
+label = %time%
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/volume]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+use-ui-max = false
+interval = 5
+
+format-volume = <ramp-volume>  <label-volume>
+
+format-muted = <label-muted>
+format-muted-prefix = 婢
+format-muted-prefix-font = 2
+format-muted-prefix-foreground = ${color.RED}
+
+label-volume = %percentage%%
+label-muted = " Muted"
+label-muted-foreground = #757575
+
+ramp-volume-0 = 奄
+ramp-volume-1 = 奄
+ramp-volume-2 = 奄
+ramp-volume-3 = 奔
+ramp-volume-4 = 奔
+ramp-volume-5 = 奔
+ramp-volume-6 = 墳
+ramp-volume-7 = 墳
+ramp-volume-8 = 墳
+ramp-volume-9 = 墳
+ramp-volume-font = 2
+ramp-volume-foreground = ${color.BLUE}
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/backlight]
+type = internal/xbacklight
+card = intel_backlight
+format = <ramp> <label>
+label = %percentage%%
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-5 = 
+ramp-6 = 
+ramp-7 = 
+ramp-8 = 
+ramp-9 = 
+ramp-font = 2
+ramp-foreground = ${color.MAGENTA}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = BAT1
+adapter = ACAD
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging = <animation-charging> <label-charging>
+format-charging-prefix = 
+
+format-discharging = <ramp-capacity> <label-discharging>
+
+format-full = <label-full>
+format-full-prefix = " "
+format-full-prefix-font = 2
+format-full-prefix-foreground = ${color.RED}
+
+label-charging = %percentage%%
+label-discharging = %percentage%%
+label-full = %percentage%%
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-font = 2
+ramp-capacity-foreground = ${color.YELLOW}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-font = 2
+animation-charging-foreground = ${color.GREEN}
+animation-charging-framerate = 750
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/bspwm]
+type = internal/xworkspaces
+
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+
+icon-0 = 1;
+icon-1 = 2;
+icon-2 = 3;
+icon-3 = 4;
+icon-4 = 5;
+icon-default = 
+
+format = <label-state>
+format-padding = 0
+format-font = 2
+
+; Available tokens:
+;   %name%
+; Default: %name%
+label-monitor = %name%
+
+label-active = %icon%
+label-active-foreground = ${color.BLUE}
+label-active-background = ${color.BG}
+;;label-active-underline = ${color.AC}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-occupied = %icon%
+label-occupied-foreground = ${color.CYAN}
+label-occupied-background = ${color.BG}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-urgent = %icon%
+label-urgent-foreground = ${color.GREEN}
+label-urgent-background = ${color.BG}
+
+label-empty = %icon%
+label-empty-foreground = ${color.CYAN}
+
+label-active-padding = 1
+label-urgent-padding = 1
+label-occupied-padding = 1
+label-empty-padding = 1
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/memory]
+type = internal/memory
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3
+
+; Available tags:
+;   <label> (default)
+;   <bar-used>
+;   <bar-free>
+;   <ramp-used>
+;   <ramp-free>
+;   <bar-swap-used>
+;   <bar-swap-free>
+;   <ramp-swap-used>
+;   <ramp-swap-free>
+format = <label>
+format-background = ${color.BGL}
+
+format-prefix = " "
+format-prefix-font = 2
+format-prefix-foreground = ${color.GREEN}
+
+; Available tokens:
+;   %percentage_used% (default)
+;   %percentage_free%
+;   %gb_used%
+;   %gb_free%
+;   %gb_total%
+;   %mb_used%
+;   %mb_free%
+;   %mb_total%
+;   %percentage_swap_used%
+;   %percentage_swap_free%
+;   %mb_swap_total%
+;   %mb_swap_free%
+;   %mb_swap_used%
+;   %gb_swap_total%
+;   %gb_swap_free%
+;   %gb_swap_used%
+
+label = " %mb_used%"
+
+; Only applies if <ramp-used> is used
+;;ramp-used-0 = 
+;;ramp-used-1 = 
+;;ramp-used-2 = 
+;;ramp-used-3 = 
+;;ramp-used-4 = 
+
+; Only applies if <ramp-free> is used
+;;ramp-free-0 = 
+;;ramp-free-1 = 
+;;ramp-free-2 = 
+;;ramp-free-3 = 
+;;ramp-free-4 = 
+
+[module/sysmenu]
+type = custom/text
+
+content = 襤
+content-font = 2
+content-background = ${color.BGL}
+content-foreground = ${color.RED}
+content-padding = 0
+
+click-left = ~/.config/bspwm/rofi/bin/powermenu
+
+[module/sep]
+type = custom/text
+content = " "
+content-font = 3
+
+content-foreground = ${color.FG}
+content-background = ${color.BG}
+content-padding = 2

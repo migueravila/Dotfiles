@@ -1,0 +1,165 @@
+; ┌─┐┌─┐┬ ┬ ┬┌┐ ┌─┐┬─┐
+; ├─┘│ ││ └┬┘├┴┐├─┤├┬┘
+; ┴  └─┘┴─┘┴ └─┘┴ ┴┴└─
+;
+; Miguel R. Ávila
+
+[global/wm]
+margin-bottom = 0
+margin-top = 0
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+include-file = ~/.config/bspwm/polybar/colors
+include-file = ~/.config/bspwm/polybar/modules
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/main]
+monitor = VGA1
+monitor-strict = false
+override-redirect = false
+
+bottom = true
+fixed-center = true
+
+width = 10%
+height = 20
+
+offset-x = 45%
+offset-y = 7
+
+background = ${color.BACKGROUND}
+foreground = ${color.FOREGROUND}
+
+radius-top = 0.0
+radius-bottom = 0.0
+
+line-size = 2
+line-color = ${color.BLUE}
+
+border-size = 4
+border-color = ${color.BACKGROUND}
+
+padding = 1
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Inter:size=10:weight=bold;3"
+font-1 = "Iosevka Nerd Font:size=12;3"
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+modules-left = 
+modules-center = bspwm
+modules-right = 
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+separator =
+spacing = 0
+
+dim-value = 1.0
+
+wm-name = bspwm
+locale = 
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 16
+tray-transparent = false
+tray-background = ${color.BACKGROUND}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+
+wm-restack = bspwm
+
+enable-ipc = true
+
+; bspwm
+scroll-up = bspc desktop -f prev.local
+scroll-down = bspc desktop -f next.local
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/secondary]
+monitor = HDMI1
+monitor-strict = false
+override-redirect = false
+
+bottom = true
+fixed-center = true
+
+width = 70%
+height = 20
+
+offset-x = 15%
+offset-y = 7
+
+background = ${color.BACKGROUND}
+foreground = ${color.FOREGROUND}
+
+radius-top = 0.0
+radius-bottom = 0.0
+
+line-size = 2
+line-color = ${color.BLUE}
+
+border-size = 4
+border-color = ${color.BACKGROUND}
+
+padding = 1
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Inter:size=10:weight=bold;3"
+font-1 = "Iosevka Nerd Font:size=12;3"
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+modules-left = sep bspwm
+modules-center = 
+modules-right = memory sep volume sep network sep date sep
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+separator =
+spacing = 0
+
+dim-value = 1.0
+
+wm-name = bspwm
+locale = 
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 16
+tray-transparent = false
+tray-background = ${color.BACKGROUND}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+
+wm-restack = bspwm
+
+enable-ipc = true
+
+; bspwm
+scroll-up = bspc desktop -f prev.local
+scroll-down = bspc desktop -f next.local
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+
+screenchange-reload = false
+
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over

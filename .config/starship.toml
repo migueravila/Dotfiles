@@ -25,7 +25,7 @@ $character"""
 
 
 [character]
-success_symbol = "[➜](bold green)"
+success_symbol = "[➜](bold purple)"
 error_symbol = "[➜](bold red) "
 
 [line_break]

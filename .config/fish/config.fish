@@ -43,4 +43,4 @@ alias pp='colorscript random'
 
 # prompt
 starship init fish | source
-colorscript -e crunchbang-mini
+colorscript -e colorbars
