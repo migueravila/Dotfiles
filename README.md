@@ -3,7 +3,7 @@
 
 <p style="margin: -20px 0 30px">
   <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
-    <img align="center" src="https://github.com/migueravila/Dotfiles/blob/master/assets/img/donation.png" alt="linkedin" height="35px" />
+    <img align="center" src="https://github.com/migueravila/Dotfiles/blob/master/assets/donation.png" alt="donation" height="35px" />
   </a>
 </p>
 
