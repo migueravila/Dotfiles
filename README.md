@@ -1,8 +1,11 @@
 ![image](assets/head.png)
 
-<div align="center">
-    <b>🌷 Personal dotfiles.</b>
-</div>
+
+<p style="margin: -20px 0 30px">
+  <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
+    <img align="center" src="https://github.com/migueravila/Dotfiles/blob/master/assets/img/donation.png" alt="linkedin" height="35px" />
+  </a>
+</p>
 
 <br>
 
@@ -10,6 +13,8 @@
 - [👇 Index](#-index)
 - [🎨 Config files:](#-config-files)
 - [🚀 Projects used:](#-projects-used)
+- [🖼️ Wallpapers:](#️-wallpapers)
+- [🎉 Gallery](#-gallery)
 
 ## 🎨 Config files:
 
@@ -33,3 +38,13 @@
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build the st terminal **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
+
+## 🖼️ Wallpapers:
+
+<br>
+
+![walls](assets/walls.png)
+
+<br>
+
+## 🎉 Gallery
