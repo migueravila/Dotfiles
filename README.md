@@ -13,15 +13,23 @@
 
 ## 🎨 Config files:
 
-- Config files for **bspwm**
-- Dunst, Ncmpcpp and lf config files
-- **Polybar** config file
-- **Neovim** configuration files
-- The config files for the **Alacritty** Terminal
+| Program           | Name                                                                                                                         |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 🎨 Color Scheme    | [Rosé Pine](https://github.com/rose-pine)                                                                                    |
+| 🚀 Window Manager  | [Bspwm](https://github.com/baskerville/bspwm)                                                                                |
+| 🚧 Bar             | [Polybar](https://github.com/polybar/polybar)                                                                                |
+| 💾 Launcher        | [Rofi](https://github.com/davatorium/rofi)                                                                                   |
+| 🌍 Web Browser     | [Firefox](https://www.mozilla.org/en-US/firefox/new/?redirect_source=firefox-com)                                            |
+| 🖊️ Text Editor     | [VSCode](https://aur.archlinux.org/packages/visual-studio-code-bin/?O=10&PP=10) & [Neovim]https://github.com/neovim/neovim() |
+| 🐚 Shell           | [Fish](https://github.com/fish-shell/fish-shell)                                                                             |
+| ⌨️ Terminal        | [Alacritty](https://github.com/alacritty/alacritty)                                                                          |
+| 📄 Document Viewer | [Zathura](https://github.com/alacritty/alacritty)                                                                            |
+| 👔 GTK             | [Rosé Pine](https://github.com/rose-pine/gtk)                                                                                |
+| 🎵 Music Player    | [Ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)                                                                                |
+
 
 ## 🚀 Projects used:
 
-- The build of **Dmenu**: [⚡ CleanDmenu](https://github.com/MiguelRAvila/CleanDmenu)
 - The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
 - The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
 - The build the st terminal **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
