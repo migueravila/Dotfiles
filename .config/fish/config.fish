@@ -23,6 +23,7 @@ alias la="exa -la --group-directories-first"
 alias h='htop'
 alias v='nvim'
 alias c='bat'
+alias f='ranger'
 
 # git
 alias ga='git add .'
@@ -43,4 +44,4 @@ alias pp='colorscript random'
 
 # prompt
 starship init fish | source
-colorscript -e colorbars
+colorscript -e alpha

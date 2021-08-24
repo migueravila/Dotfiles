@@ -2,7 +2,7 @@
 # └─┐┌┴┬┘├─┤├┴┐ ││
 # └─┘┴ └─┴ ┴┴ ┴─┴┘
 #
-# Miguel Ávila
+# Miguel R. Ávila
 
 ##---------- Applications ----------##
 
@@ -22,7 +22,7 @@ super + shift + {z,x,c}
 
 # Rofi App Launcher
 alt + F1
-	sh ~/.config/rofi/bin/launcher
+	sh ~/.config/bspwm/rofi/bin/launcher
 
 # Rofi Network Menu
 super + n
@@ -30,10 +30,10 @@ super + n
 
 # Menus
 super + {a,s,d,f}
-	sh ~/.config/rofi/bin/{emoji,screenshot,powermenu,network}
+	sh ~/.config/bspwm/rofi/bin/{emoji,screenshot,powermenu,network}
 
 super + shift + {a,s}
-	sh ~/.config/rofi/bin/{windows,asroot}
+	sh ~/.config/bspwm/rofi/bin/{windows,asroot}
 
 ##---------- System ----------##
 

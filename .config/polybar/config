@@ -20,7 +20,7 @@ monitor = VGA1
 monitor-strict = false
 override-redirect = false
 
-bottom = true
+bottom = false
 fixed-center = true
 
 width = 10%
@@ -89,7 +89,7 @@ monitor = HDMI1
 monitor-strict = false
 override-redirect = false
 
-bottom = true
+bottom = false
 fixed-center = true
 
 width = 70%
