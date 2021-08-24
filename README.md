@@ -25,7 +25,7 @@
 | 🚧 Bar             | [Polybar](https://github.com/polybar/polybar)                                                                                |
 | 💾 Launcher        | [Rofi](https://github.com/davatorium/rofi)                                                                                   |
 | 🌍 Web Browser     | [Firefox](https://www.mozilla.org/en-US/firefox/new/?redirect_source=firefox-com)                                            |
-| 🖊️ Text Editor     | [VSCode](https://aur.archlinux.org/packages/visual-studio-code-bin/?O=10&PP=10) & [Neovim]https://github.com/neovim/neovim() |
+| 🖊️ Text Editor     | [VSCode](https://aur.archlinux.org/packages/visual-studio-code-bin/?O=10&PP=10) & [Neovim](https://github.com/neovim/neovim) |
 | 🐚 Shell           | [Fish](https://github.com/fish-shell/fish-shell)                                                                             |
 | ⌨️ Terminal        | [Alacritty](https://github.com/alacritty/alacritty)                                                                          |
 | 📄 Document Viewer | [Zathura](https://github.com/alacritty/alacritty)                                                                            |
