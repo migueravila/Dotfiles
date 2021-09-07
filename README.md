@@ -1,5 +1,9 @@
 ![image](assets/head.png)
 
+<br>
+
+![image](assets/shead.png)
+
 
 <p style="margin: -20px 0 30px">
   <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
@@ -18,11 +22,6 @@
 - [🖼️ Wallpapers:](#️-wallpapers)
 - [🎉 Gallery](#-gallery)
 
-<br>
-
-![image](assets/shead.png)
-
-<br>
 
 ## 🎨 Config files:
 
