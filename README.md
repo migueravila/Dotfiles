@@ -35,9 +35,9 @@
 
 ## 🚀 Projects used:
 
-- The **Firefox** custom userstyle: [🦊 SimplerentFox](https://github.com/MiguelRAvila/SimplerentFox)
-- The **Startpage**: [🍱 Bento](https://github.com/MiguelRAvila/Bento)
-- The build the st terminal **ST**: [⌨️ SimplierTerminal](https://github.com/MiguelRAvila/SimplierTerminal)
+- The **Firefox** custom userstyle: [🦊 SimpleFox](https://github.com/migueravila/SimpleFox)
+- The **Startpage**: [🍱 Bento](https://github.com/migueravila/Bento)
+- The terminal **ST**: [⌨️ SimplierTerminal](https://github.com/migueravila/SimplierTerminal)
 
 ## 🖼️ Wallpapers:
 
@@ -49,4 +49,6 @@
 
 ## 🎉 Gallery
 
+<br>
 
+![gallery](assets/gallery.png)
