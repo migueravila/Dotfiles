@@ -18,7 +18,11 @@
 - [🖼️ Wallpapers:](#️-wallpapers)
 - [🎉 Gallery](#-gallery)
 
+<br>
+
 ![image](assets/shead.png)
+
+<br>
 
 ## 🎨 Config files:
 
